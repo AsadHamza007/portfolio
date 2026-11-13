@@ -1,6 +1,6 @@
 # Asad Hamza, iOS Developer
 
-Source of my portfolio site: https://asadhamza007.github.io/
+Source of my portfolio site: https://asadhamza007.github.io/portfolio/
 
 One page, no build step. Everything is in `index.html`; images are in `assets/`.
 
