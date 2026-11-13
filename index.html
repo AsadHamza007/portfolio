@@ -1,0 +1,1390 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="canonical" href="https://asadhamza007.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Asad Hamza, iOS Developer">
+<meta property="og:description" content="4+ years of native iOS work and more than 30 apps shipped to the App Store.">
+<meta property="og:url" content="https://asadhamza007.github.io/">
+<meta property="og:image" content="https://asadhamza007.github.io/assets/portrait-fallback.jpg">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='17' fill='%2366FCF1'/%3E%3Ctext x='32' y='45' font-family='Impact,Arial Narrow,sans-serif' font-size='34' text-anchor='middle' fill='%230B0C10'%3EAH%3C/text%3E%3C/svg%3E">
+<style>
+/* Host reset: the same few rules the claude.ai artifact viewer wraps around the page. */
+:root{color-scheme:light;padding:env(safe-area-inset-top,0px) 0 env(safe-area-inset-bottom,0px)}
+body{margin:0;font:14px system-ui,sans-serif}
+img{max-width:100%}
+[hidden]{display:none!important}
+</style>
+<!--page:head-->
+<title>Asad Hamza Portfolio</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Asad Hamza is an iOS developer with 4+ years of experience and more than 30 apps shipped to the App Store.">
+<meta name="theme-color" content="#0B0C10">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: a poster hero where a giant condensed name sandwiches a cut-out portrait,
+   then a 12-column grid with mono metadata in the margins and wide dark gaps between sections. */
+:root{
+  color-scheme:dark;
+  /* colour: the five-swatch palette, plus tints derived from it */
+  --ink:#0B0C10;            /* page */
+  --ink-2:#11141A;          /* raised panels */
+  --slate:#1F2833;          /* cards */
+  --mist:#C5C6C7;           /* body text */
+  --white:#F1F5F5;          /* headings */
+  --dim:#8F979F;            /* metadata */
+  --cyan:#66FCF1;           /* accent */
+  --teal:#45A29E;           /* quiet accent */
+  --live:#58E08A;           /* availability dot only */
+  --line:rgba(197,198,199,.14);
+  --line-2:rgba(197,198,199,.26);
+  /* type: poster display, friendly text face, mono for metadata */
+  --f-display:"Anton","Impact","Haettenschweiler","Arial Narrow Bold",sans-serif;
+  --f-body:"Plus Jakarta Sans","Segoe UI",system-ui,-apple-system,sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  /* space and motion */
+  --gutter:clamp(16px,4vw,56px);
+  --maxw:1360px;
+  --top-h:72px;
+  --r-card:22px;
+  --ease:cubic-bezier(.16,1,.3,1);
+  --spring:cubic-bezier(.34,1.56,.64,1);
+}
+/* a real damped spring (zeta .6) where the browser can draw one */
+@supports (transition-timing-function:linear(0,1)){
+  :root{--spring:linear(0,.072 4%,.239 8%,.442 12%,.639 16%,.807 20%,.936 24%,1.022 28%,1.072 32%,1.093 36%,1.093 40%,1.081 44%,1.063 48%,1.043 52%,1.026 56%,1.012 60%,1.002 64%,.995 68%,.992 72%,.991 76%,.992 80%,.995 88%,1)}
+}
+
+/* ---------- base ---------- */
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scrollbar-gutter:stable;-webkit-text-size-adjust:100%;text-size-adjust:100%;scroll-padding-top:calc(var(--top-h) + 12px)}
+html.is-locked{overflow:hidden}
+body{margin:0;background:var(--ink);color:var(--mist);font:400 16px/1.6 var(--f-body);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden;overflow-x:clip}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--ink)}
+::selection{background:var(--cyan);color:var(--ink)}
+:focus-visible{outline:2px solid var(--cyan);outline-offset:3px}
+h1,h2,h3,p,figure,dl,dd,ul,ol{margin:0}
+ul,ol{padding:0;list-style:none}
+a{color:inherit}
+img{display:block}
+button{font:inherit;color:inherit}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.ic{width:1em;height:1em;flex:none;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.wrap{width:100%;max-width:var(--maxw);margin-inline:auto;padding-left:max(var(--gutter),env(safe-area-inset-left,0px));padding-right:max(var(--gutter),env(safe-area-inset-right,0px))}
+.sec{padding-block:clamp(72px,9vw,132px)}
+.eyebrow{display:flex;align-items:center;gap:12px;font:500 12px/1 var(--f-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--teal)}
+.eyebrow::before{content:"";width:28px;height:1px;background:currentColor}
+.title{font:400 clamp(2.9rem,7.4vw,6.4rem)/.94 var(--f-display);text-transform:uppercase;letter-spacing:.004em;color:var(--white);text-wrap:balance}
+.title em{font-style:normal;color:var(--cyan)}
+.sub{max-width:52ch;font-size:clamp(1rem,1.2vw,1.125rem);text-wrap:pretty}
+.sec-head{display:grid;gap:18px;margin-bottom:clamp(28px,4vw,56px)}
+@media (min-width:900px){
+  .sec-head{grid-template-columns:minmax(0,7fr) minmax(0,5fr);align-items:end;column-gap:40px}
+  .sec-head .eyebrow{grid-column:1/-1}
+}
+.skip{position:fixed;left:16px;top:calc(env(safe-area-inset-top,0px) + 12px);z-index:70;padding:10px 16px;border-radius:999px;background:var(--cyan);color:var(--ink);font-weight:600;text-decoration:none;transform:translateY(-300%)}
+.skip:focus{transform:none}
+
+/* ---------- buttons ---------- */
+.btn{position:relative;display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 24px;border:1px solid transparent;border-radius:999px;background:var(--cyan);color:var(--ink);font:600 15px/1 var(--f-body);text-decoration:none;cursor:pointer;will-change:transform;transition:background-color .25s,color .25s,border-color .25s}
+.btn:hover{background:#A2FFF9}
+.btn--ghost{background:transparent;border-color:var(--line-2);color:var(--white)}
+.btn--ghost:hover{background:rgba(102,252,241,.08);border-color:var(--cyan)}
+.btn--sm{min-height:42px;padding:0 18px;font-size:14px}
+.btn--xl{min-height:60px;padding:0 30px;font-size:16px}
+.btn-in{display:inline-flex;align-items:center;gap:10px;pointer-events:none;will-change:transform}
+.btn .ic{transition:transform .5s var(--spring)}
+.btn:hover .ic{transform:translate(2px,-2px)}
+.btn:hover .ic--down{transform:translateY(3px)}
+
+/* ---------- preloader: counter, then a two-tone curtain ---------- */
+.boot,.boot-veil{position:fixed;inset:0}
+.boot{z-index:100;display:grid;grid-template-rows:auto 1fr auto;padding:clamp(20px,4vw,44px) max(var(--gutter),env(safe-area-inset-right,0px)) clamp(20px,4vw,44px) max(var(--gutter),env(safe-area-inset-left,0px));background:var(--ink);animation:boot-out .5s cubic-bezier(.76,0,.24,1) .72s forwards}
+.boot-veil{z-index:99;background:var(--cyan);animation:boot-out .5s cubic-bezier(.76,0,.24,1) .8s forwards}
+.boot-top{display:flex;justify-content:space-between;gap:16px;font:500 12px/1 var(--f-mono);letter-spacing:.12em;text-transform:uppercase;color:var(--mist)}
+.boot-num{align-self:end;font:400 clamp(6rem,26vw,20rem)/.8 var(--f-display);color:var(--cyan);font-variant-numeric:tabular-nums}
+.boot-bar{height:2px;margin-top:20px;background:var(--line)}
+.boot-bar i{display:block;height:100%;background:var(--cyan);transform-origin:left;animation:boot-bar .66s cubic-bezier(.3,0,.2,1) both}
+@keyframes boot-out{to{transform:translate3d(0,-101%,0);visibility:hidden}}
+@keyframes boot-bar{from{transform:scaleX(0)}}
+
+/* ---------- header ---------- */
+#sentinel{position:absolute;top:0;left:0;width:1px;height:24px;pointer-events:none}
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;height:var(--top-h);display:flex;align-items:center;border-bottom:1px solid transparent;transition:background-color .35s,border-color .35s}
+.top.is-stuck{background:rgba(11,12,16,.76);-webkit-backdrop-filter:blur(16px) saturate(1.4);backdrop-filter:blur(16px) saturate(1.4);border-bottom-color:var(--line)}
+.top-in{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:inline-flex;align-items:center;gap:12px;color:var(--white);font-weight:600;text-decoration:none}
+.brand-mark{display:grid;place-items:center;width:40px;height:40px;border-radius:27%;background:var(--cyan);color:var(--ink);font:400 19px/1 var(--f-display);letter-spacing:.03em}
+.brand-name,.top .btn{display:none}
+.nav{display:flex;align-items:center;gap:clamp(12px,2.6vw,36px);font-size:clamp(13px,3.6vw,14px);font-weight:500}
+.nav a{position:relative;padding:10px 0;color:var(--mist);text-decoration:none;transition:color .25s}
+.nav a::after{content:"";position:absolute;left:0;right:0;bottom:4px;height:1px;background:var(--cyan);transform:scaleX(0);transform-origin:left;transition:transform .45s var(--ease)}
+.nav a:hover,.nav a[aria-current="true"]{color:var(--white)}
+.nav a:hover::after,.nav a[aria-current="true"]::after{transform:scaleX(1)}
+@media (min-width:720px){.brand-name{display:inline}.top .btn{display:inline-flex}}
+
+/* ---------- hero ---------- */
+.hero{position:relative;isolation:isolate;overflow:hidden;overflow:clip;margin-top:calc(var(--top-h) * -1);padding-top:calc(var(--top-h) + clamp(10px,2vw,26px));padding-bottom:clamp(40px,6vw,84px)}
+.hero-bg{position:absolute;inset:0;z-index:-1;overflow:hidden;pointer-events:none}
+.hero-bg::after{content:"";position:absolute;inset:auto 0 0;height:36%;background:linear-gradient(to bottom,transparent,var(--ink))}
+#field{position:absolute;left:0;top:0;width:100%;height:100%}
+.blob{position:absolute;width:560px;aspect-ratio:1;border-radius:50%;filter:blur(90px);will-change:transform}
+.blob--a{right:-140px;top:-180px;background:rgba(69,162,158,.3);animation:drift 19s ease-in-out infinite alternate}
+.blob--b{left:-220px;bottom:-120px;background:rgba(102,252,241,.1);animation:drift 23s ease-in-out infinite alternate-reverse}
+@keyframes drift{to{transform:translate3d(-70px,60px,0) scale(1.12)}}
+/* spotlight: a round window that follows the pointer and shows a brighter drawing of the same field */
+.spot{position:absolute;left:0;top:0;width:520px;height:520px;border-radius:50%;overflow:hidden;background:radial-gradient(closest-side,rgba(102,252,241,.12),transparent);-webkit-mask-image:radial-gradient(closest-side,#000 18%,transparent 100%);mask-image:radial-gradient(closest-side,#000 18%,transparent 100%);will-change:transform}
+#fieldHot{position:absolute;left:0;top:0;will-change:transform}
+
+.hero-meta{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 24px;margin-bottom:clamp(14px,1.8vw,24px)}
+.avail{display:inline-flex;align-items:center;gap:10px;padding:9px 15px 9px 13px;border:1px solid var(--line-2);border-radius:999px;background:rgba(31,40,51,.55);font:500 12.5px/1 var(--f-mono);color:var(--white)}
+.avail b{font-weight:500;color:var(--cyan)}
+.pulse{position:relative;width:8px;height:8px;flex:none;border-radius:50%;background:var(--live)}
+.pulse::after{content:"";position:absolute;inset:0;border-radius:50%;background:var(--live);animation:pulse 2.2s var(--ease) infinite}
+@keyframes pulse{from{transform:scale(1);opacity:.75}to{transform:scale(3.6);opacity:0}}
+.hero-role{font:500 12.5px/1 var(--f-mono);letter-spacing:.12em;text-transform:uppercase}
+.hero-role i{font-style:normal;color:var(--teal);margin-inline:.5em}
+
+/* the stage: both name lines and the portrait share one grid cell; z-index makes the sandwich */
+.stage{container-type:inline-size;position:relative;display:grid;grid-template-columns:minmax(0,1fr);row-gap:clamp(22px,5vw,34px)}
+.name{grid-area:1/1;display:flex;flex-direction:column;justify-content:space-between;font:400 30vw/.92 var(--f-display);font-size:31cqw;text-transform:uppercase;color:var(--cyan);-webkit-user-select:none;user-select:none;pointer-events:none}
+.name-line{position:relative;display:block;white-space:nowrap;clip-path:inset(-40% -12% -1% -12%);will-change:transform}
+.name-line--a{align-self:flex-start;z-index:1}
+.name-line--b{align-self:flex-end;z-index:3}
+.ch{display:inline-block;transform-origin:50% 100%;will-change:transform;animation:ch-in .95s var(--ease) backwards;animation-delay:calc(.86s + var(--i) * 46ms)}
+.name-line--b .ch{color:rgb(102 252 241 / var(--f,0));-webkit-text-stroke:clamp(1.25px,.0075em,2.4px) var(--cyan);text-shadow:0 0 0 rgba(11,12,16,.42)}
+@keyframes ch-in{from{transform:translate3d(0,112%,0)}}
+.portrait{grid-area:1/1;position:relative;z-index:2;width:74%;justify-self:end;align-self:end;pointer-events:none;will-change:transform}
+.portrait-in{position:relative;filter:drop-shadow(0 0 30px rgba(102,252,241,.2));animation:rise 1.15s var(--ease) .9s backwards}
+.portrait-cut{position:relative;-webkit-mask-image:linear-gradient(to bottom,#000 58%,transparent 97%);mask-image:linear-gradient(to bottom,#000 58%,transparent 97%)}
+.portrait img{width:100%;height:auto;filter:url(#grade)}
+/* colour grade, part two: cyan key light from the left, clipped to the silhouette */
+.portrait-rim{display:none;position:absolute;inset:0;background:linear-gradient(98deg,rgba(102,252,241,.62),rgba(102,252,241,0) 40%,rgba(31,40,51,0) 62%,rgba(11,12,16,.5));mix-blend-mode:soft-light;-webkit-mask:url(assets/portrait.avif) center/100% 100% no-repeat;mask:url(assets/portrait.avif) center/100% 100% no-repeat}
+.avif .portrait-rim{display:block}
+.halo{position:absolute;left:50%;top:40%;z-index:-1;width:82%;aspect-ratio:1;border-radius:50%;transform:translate(-50%,-50%);background:radial-gradient(closest-side,rgba(102,252,241,.2),rgba(69,162,158,.09) 55%,transparent 72%);animation:rise 1.4s var(--ease) .8s backwards}
+.halo::after{content:"";position:absolute;inset:10%;border-radius:50%;border:1px solid rgba(102,252,241,.26)}
+@keyframes rise{from{opacity:0;transform:translate3d(0,5%,0) scale(1.04)}}
+.hero-copy{animation:fade-up .9s var(--ease) 1.2s backwards}
+.plate{animation:fade-up .9s var(--ease) 1.3s backwards}
+.hero-meta{animation:fade-up .9s var(--ease) .95s backwards}
+@keyframes fade-up{from{opacity:0;transform:translate3d(0,22px,0)}}
+.lead{max-width:46ch;margin-bottom:22px;font-size:clamp(1rem,1.25vw,1.125rem);text-wrap:pretty}
+.lead strong{font-weight:600;color:var(--white)}
+.cta{display:flex;flex-wrap:wrap;gap:10px}
+.plate{display:grid;padding:3px 16px;border:1px solid var(--line);border-radius:16px;background:rgba(11,12,16,.62);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);font:400 12.5px/1.4 var(--f-mono)}
+.plate div{display:flex;align-items:baseline;justify-content:space-between;gap:16px;padding:11px 0}
+.plate div + div{border-top:1px solid var(--line)}
+.plate dt{letter-spacing:.1em;text-transform:uppercase;color:var(--dim)}
+.plate dd{color:var(--white);text-align:right}
+@media (min-width:720px){
+  .name{font-size:27cqw}
+  .portrait{width:54%;margin-right:12%}
+  .stage{grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);column-gap:40px}
+  .name,.portrait{grid-column:1/-1}
+  .hero-copy{grid-area:2/1}
+  .plate{grid-area:2/2;align-self:end}
+}
+@media (min-width:1200px){
+  .stage{grid-template-columns:minmax(0,1fr)}
+  .name{font-size:24cqw}
+  .portrait{width:44%;justify-self:start;margin:0 0 0 31%}
+  .hero-copy{grid-area:auto;position:absolute;left:0;bottom:0;z-index:4;width:28%}
+  .plate{grid-area:auto;position:absolute;right:0;top:.5cqw;z-index:4;width:21.5%}
+}
+
+/* ---------- kinetic marquee ---------- */
+.marquee{display:grid;gap:clamp(4px,1vw,12px);padding-block:clamp(18px,2.6vw,34px);border-block:1px solid var(--line);overflow:hidden}
+.mq{display:flex;align-items:center;width:max-content;animation:mq 60s linear -1000s infinite;will-change:transform}
+.mq--rev{animation-direction:reverse;animation-duration:44s}
+.mq span{font:400 clamp(2.6rem,7.6vw,6.6rem)/1.08 var(--f-display);text-transform:uppercase;white-space:nowrap;color:var(--mist)}
+.mq span:nth-of-type(even){color:transparent;-webkit-text-stroke:1px var(--teal)}
+.mq i{width:clamp(7px,1vw,13px);aspect-ratio:1;flex:none;margin-inline:clamp(16px,2.6vw,40px);border-radius:50%;background:var(--cyan)}
+.mq--rev span{font-size:clamp(1.4rem,3.4vw,2.9rem);color:transparent;-webkit-text-stroke:1px rgba(197,198,199,.5)}
+.mq--rev span:nth-of-type(even){-webkit-text-stroke-color:var(--teal)}
+.mq--rev i{background:var(--teal)}
+@keyframes mq{to{transform:translate3d(-50%,0,0)}}
+
+/* ---------- selected work ---------- */
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:clamp(18px,2.4vw,30px)}
+.chip{appearance:none;display:inline-flex;align-items:center;gap:8px;min-height:42px;padding:0 16px;border:1px solid var(--line-2);border-radius:999px;background:transparent;color:var(--mist);font:500 14px/1 var(--f-body);cursor:pointer;transition:background-color .25s,border-color .25s,color .25s}
+.chip small{font:500 11px/1 var(--f-mono);color:var(--dim);transition:color .25s}
+.chip:hover{border-color:var(--cyan);color:var(--white)}
+.chip[aria-pressed="true"]{background:var(--cyan);border-color:var(--cyan);color:var(--ink)}
+.chip[aria-pressed="true"] small{color:rgba(11,12,16,.66)}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(12px,1.4vw,20px)}
+.card{grid-column:span 2;display:flex;min-width:0}
+.card--sm{grid-column:span 1}
+.grid.is-filtered .card{grid-column:span 2}
+.card-hit{appearance:none;position:relative;isolation:isolate;overflow:hidden;display:flex;flex-direction:column;align-items:flex-start;gap:12px;width:100%;padding:20px;border:1px solid var(--line);border-radius:var(--r-card);background:linear-gradient(180deg,rgba(31,40,51,.8),rgba(31,40,51,.42));color:var(--mist);text-align:left;cursor:pointer;transition:border-color .3s}
+.card-hit::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(340px circle at var(--gx,50%) var(--gy,0%),rgba(102,252,241,.17),transparent 62%);opacity:0;transition:opacity .35s}
+.card-hit:hover,.card-hit:focus-visible{border-color:rgba(102,252,241,.5)}
+.card-hit:hover::before,.card-hit:focus-visible::before{opacity:1}
+/* each card borrows its colour from its own icon, blurred into a glow */
+.card-aura{position:absolute;right:-14%;top:-36%;z-index:-2;width:62%;aspect-ratio:1;border-radius:50%;background-size:cover;filter:blur(46px) saturate(1.6);opacity:.24;pointer-events:none}
+.card-row{display:flex;align-items:center;gap:12px;width:100%}
+.app-icon{width:52px;height:52px;flex:none;border-radius:23%;box-shadow:0 0 0 1px rgba(197,198,199,.16),0 10px 24px -10px rgba(0,0,0,.7)}
+.card-tag{min-width:0;font:500 11px/1.4 var(--f-mono);letter-spacing:.1em;text-transform:uppercase;color:var(--teal)}
+.card-year{margin-left:auto;font:500 11px/1 var(--f-mono);color:var(--dim)}
+.card-name{font:700 1.2rem/1.2 var(--f-body);letter-spacing:-.01em;color:var(--white)}
+.card-blurb{font-size:.95rem;line-height:1.55;text-wrap:pretty}
+.pills{display:flex;flex-wrap:wrap;gap:6px}
+.pill{padding:5px 10px;border:1px solid var(--line-2);border-radius:999px;font:500 11px/1.2 var(--f-mono);color:var(--mist);white-space:nowrap}
+.card-foot{display:flex;align-items:center;gap:12px;width:100%;margin-top:auto;padding-top:6px}
+.card-status{font:500 11px/1.3 var(--f-mono);letter-spacing:.06em;text-transform:uppercase;color:var(--dim)}
+.card-go{display:grid;place-items:center;width:36px;height:36px;flex:none;margin-left:auto;border:1px solid var(--line-2);border-radius:50%;color:var(--white);font-size:15px;transition:background-color .3s,border-color .3s,color .3s,transform .6s var(--spring)}
+.card-hit:hover .card-go{background:var(--cyan);border-color:var(--cyan);color:var(--ink);transform:rotate(45deg)}
+.card--xl .card-hit{gap:14px;min-height:340px;padding:clamp(22px,2.4vw,32px)}
+.card--xl .app-icon{width:72px;height:72px}
+.card--xl .card-name{margin-top:auto;font:400 clamp(2.3rem,4vw,3.6rem)/.96 var(--f-display);letter-spacing:.005em;text-transform:uppercase}
+.card--xl .card-blurb{max-width:46ch;font-size:1.02rem}
+.card--xl .card-foot{margin-top:4px}
+.card--xl .card-aura{width:70%;opacity:.32}
+.card--sm .card-hit{gap:10px;padding:16px}
+.card--sm .app-icon{width:44px;height:44px}
+.card--sm .card-name{font-size:1.02rem}
+.card--sm .card-blurb{display:none}
+@media (min-width:900px){
+  .grid{grid-template-columns:repeat(6,minmax(0,1fr))}
+  .card{grid-column:span 2}
+  .card--xl,.card--sm{grid-column:span 3}
+  .grid.is-filtered .card{grid-column:span var(--span,3)}
+  .card--sm .card-blurb{display:block;font-size:.9rem}
+}
+@media (min-width:1200px){
+  .grid{grid-template-columns:repeat(12,minmax(0,1fr))}
+  .card{grid-column:span 4}
+  .card--xl{grid-column:span 6}
+  .card--sm{grid-column:span 3}
+  .grid.is-filtered .card{grid-column:span var(--span,4)}
+}
+/* cards glide to their new places when the filter changes */
+:root{view-transition-name:none}
+::view-transition-group(*){animation-duration:.6s;animation-timing-function:var(--spring)}
+::view-transition-old(*),::view-transition-new(*){animation-duration:.28s}
+
+/* ---------- release log ---------- */
+.log-grid{display:grid;gap:clamp(28px,4vw,64px)}
+.log-head{display:grid;gap:18px}
+.log-list{--rail:13px;position:relative}
+.log-rail{position:absolute;left:var(--rail);top:30px;bottom:30px;width:1px;background:var(--line-2)}
+.log-rail i{position:absolute;inset:0;background:var(--cyan);box-shadow:0 0 12px var(--cyan);transform-origin:top;transform:scaleY(var(--p,1))}
+.log-item{position:relative;display:grid;grid-template-columns:27px minmax(0,1fr);gap:6px 18px;padding-block:20px}
+.log-node{grid-area:1/1;justify-self:center;width:11px;height:11px;margin-top:5px;border:2px solid var(--cyan);border-radius:50%;background:var(--cyan);box-shadow:0 0 0 5px var(--ink),0 0 18px rgba(102,252,241,.7);transition:background-color .4s,border-color .4s,box-shadow .4s}
+.log-list.is-live .log-item:not(.is-on) .log-node{border-color:var(--line-2);background:var(--ink);box-shadow:0 0 0 5px var(--ink)}
+.log-date{grid-area:1/2;font:500 12px/1.75 var(--f-mono);letter-spacing:.1em;color:var(--teal)}
+.log-body{grid-area:2/2;display:grid;gap:8px;min-width:0}
+.log-title{display:flex;align-items:flex-start;gap:12px;font:600 clamp(1.1rem,1.7vw,1.4rem)/1.25 var(--f-body);letter-spacing:-.01em;color:var(--white)}
+.log-title > span:last-child{min-width:0;padding-top:.28em}
+.log-icons{display:inline-flex;flex:none}
+.log-icons img{width:34px;height:34px;border-radius:23%;box-shadow:0 0 0 1px rgba(197,198,199,.28),0 0 0 3px var(--ink)}
+.log-icons img + img{margin-left:-9px}
+.log-note{max-width:54ch;font-size:.97rem}
+.log-item{transition:opacity .5s}
+.log-list.is-live .log-item:not(.is-on){opacity:.5}
+@media (min-width:640px){
+  .log-list{--rail:115px}
+  .log-item{grid-template-columns:84px 27px minmax(0,1fr)}
+  .log-date{grid-area:1/1;text-align:right}
+  .log-node{grid-area:1/2}
+  .log-body{grid-area:1/3}
+}
+@media (min-width:1000px){
+  .log-grid{grid-template-columns:minmax(0,5fr) minmax(0,7fr)}
+  .log-head{position:sticky;top:calc(var(--top-h) + 36px);align-self:start}
+}
+
+/* ---------- about ---------- */
+.about{border-top:1px solid var(--line)}
+.about-grid{display:grid;gap:clamp(40px,6vw,80px);align-items:center}
+.about-copy{display:grid;gap:20px;min-width:0}
+.about-copy p{max-width:60ch;font-size:clamp(1rem,1.2vw,1.1rem);text-wrap:pretty}
+.about-copy p strong{font-weight:600;color:var(--white)}
+.stack{display:grid;margin-top:14px}
+.stack-row{display:grid;gap:10px;padding-block:16px;border-top:1px solid var(--line)}
+.stack-row h3{font:500 12px/1.9 var(--f-mono);letter-spacing:.12em;text-transform:uppercase;color:var(--teal)}
+.stack-row ul{display:flex;flex-wrap:wrap;gap:6px}
+@media (min-width:640px){.stack-row{grid-template-columns:150px minmax(0,1fr)}}
+@media (min-width:1000px){.about-grid{grid-template-columns:minmax(0,7fr) minmax(0,5fr)}}
+.phone-wrap{display:grid;justify-items:center;gap:20px}
+.phone-cap{font:400 12px/1.5 var(--f-mono);color:var(--dim);text-align:center}
+/* iPhone: every size is a multiple of --u (1/300 of the phone's width), so the whole device
+   keeps its proportions at any size, and it never grows taller than the window. */
+.phone{--pw:max(220px,min(330px,80vw,calc((100vh - 150px) / 2.06)));--u:calc(var(--pw) / 300);position:relative;flex:none;width:var(--pw);height:calc(var(--pw) * 2.06)}
+.phone-btn{position:absolute;width:calc(3.4 * var(--u));border-radius:calc(2 * var(--u));background:linear-gradient(90deg,#161C22,#77848F 50%,#2A333D)}
+.phone-btn--action{left:calc(-2.2 * var(--u));top:17.4%;height:4.6%}
+.phone-btn--up{left:calc(-2.2 * var(--u));top:25.2%;height:7.8%}
+.phone-btn--down{left:calc(-2.2 * var(--u));top:34.8%;height:7.8%}
+.phone-btn--power{right:calc(-2.2 * var(--u));top:28.6%;height:12.4%}
+.phone-body{position:absolute;inset:0;padding:calc(8 * var(--u));border:calc(3 * var(--u)) solid transparent;border-radius:calc(52 * var(--u));background:linear-gradient(#05070A,#05070A) padding-box,linear-gradient(145deg,#93A0AB,#2A333D 26%,#0F1317 50%,#3A444F 76%,#9AA7B2) border-box;box-shadow:0 calc(46 * var(--u)) calc(90 * var(--u)) calc(-36 * var(--u)) #000,0 0 calc(96 * var(--u)) calc(-28 * var(--u)) rgba(102,252,241,.4)}
+.phone-screen{position:relative;display:flex;flex-direction:column;height:100%;padding:0 calc(17 * var(--u)) calc(21 * var(--u));border-radius:calc(41 * var(--u));overflow:hidden;background:radial-gradient(130% 60% at 92% -6%,rgba(69,162,158,.82),transparent 62%),radial-gradient(100% 50% at -12% 104%,rgba(102,252,241,.3),transparent 62%),radial-gradient(80% 40% at 30% 50%,rgba(31,40,51,.85),transparent 72%),var(--ink)}
+.phone-island{position:absolute;left:50%;top:calc(17 * var(--u));width:calc(86 * var(--u));height:calc(25 * var(--u));border-radius:999px;background:#000;transform:translateX(-50%)}
+.phone-island::after{content:"";position:absolute;right:calc(8 * var(--u));top:50%;width:calc(8 * var(--u));height:calc(8 * var(--u));border-radius:50%;background:radial-gradient(circle at 35% 35%,#2D4052,#06080B 72%);transform:translateY(-50%)}
+.phone-status{display:grid;grid-template-columns:1fr calc(86 * var(--u)) 1fr;align-items:center;justify-items:center;flex:none;height:calc(43 * var(--u));margin-inline:calc(-17 * var(--u));font:600 calc(14.5 * var(--u))/1 var(--f-body);letter-spacing:-.01em;color:#fff}
+.phone-status-r{grid-column:3;display:inline-flex;align-items:center;gap:calc(4.5 * var(--u))}
+.phone-status svg{width:auto;height:calc(10 * var(--u));fill:currentColor}
+.phone-home{display:grid;grid-template-columns:repeat(4,calc(52 * var(--u)));justify-content:space-between;align-content:start;row-gap:calc(12 * var(--u));margin-top:calc(11 * var(--u))}
+.phone-dock{display:grid;grid-template-columns:repeat(4,calc(52 * var(--u)));justify-content:space-between;margin-inline:calc(-7 * var(--u));padding:calc(12 * var(--u)) calc(7 * var(--u));border-radius:calc(30 * var(--u));background:rgba(197,198,199,.18);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px)}
+.phone-app,.phone-widget{display:grid;justify-items:center;gap:calc(4 * var(--u));color:#fff;font:500 calc(9.6 * var(--u))/1.25 var(--f-body);text-decoration:none;-webkit-tap-highlight-color:transparent}
+.phone-app{appearance:none;width:calc(52 * var(--u));padding:0;border:0;background:none;cursor:pointer}
+.phone-app > span:last-child,.phone-widget > span:last-child{white-space:nowrap;text-shadow:0 1px 2px rgba(0,0,0,.6)}
+.phone-app > img,.phone-folder-tile{width:calc(52 * var(--u));height:calc(52 * var(--u));border-radius:23%;box-shadow:0 calc(6 * var(--u)) calc(14 * var(--u)) calc(-6 * var(--u)) rgba(0,0,0,.8);transition:transform .5s var(--spring)}
+.phone-app:hover > img,.phone-app:focus-visible > img,.phone-app:hover > .phone-folder-tile,.phone-app:focus-visible > .phone-folder-tile{transform:scale(1.1)}
+.phone-dock .phone-app > span{display:none}
+.phone-folder-tile{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));align-content:start;gap:calc(3.4 * var(--u));padding:calc(7.4 * var(--u));background:rgba(197,198,199,.26)}
+.phone-folder-tile img{width:100%;height:auto;aspect-ratio:1;border-radius:26%}
+.phone-widget{grid-column:span 2;grid-row:span 2}
+.phone-widget-box{display:flex;flex-direction:column;justify-content:space-between;width:100%;height:calc(132 * var(--u));padding:calc(12 * var(--u)) calc(13 * var(--u));border-radius:calc(25 * var(--u));background:linear-gradient(150deg,var(--cyan),var(--teal) 82%);color:var(--ink);box-shadow:0 calc(8 * var(--u)) calc(18 * var(--u)) calc(-8 * var(--u)) rgba(0,0,0,.8);transition:transform .5s var(--spring)}
+.phone-widget:hover .phone-widget-box,.phone-widget:focus-visible .phone-widget-box{transform:scale(1.04)}
+.phone-widget-k{font:500 calc(8.6 * var(--u))/1 var(--f-mono);letter-spacing:.12em;text-transform:uppercase}
+.phone-widget-n{font:400 calc(56 * var(--u))/.9 var(--f-display)}
+.phone-widget-t{font:600 calc(10 * var(--u))/1.2 var(--f-body)}
+.phone-search{align-self:center;display:inline-flex;align-items:center;gap:calc(4 * var(--u));margin:auto 0 calc(10 * var(--u));padding:calc(5.5 * var(--u)) calc(11 * var(--u));border-radius:999px;background:rgba(197,198,199,.2);font:600 calc(10 * var(--u))/1 var(--f-body);color:#fff}
+.phone-search svg{width:calc(9 * var(--u));height:calc(9 * var(--u))}
+.phone-bar{position:absolute;left:50%;bottom:calc(7 * var(--u));width:calc(100 * var(--u));height:calc(4 * var(--u));border-radius:999px;background:rgba(255,255,255,.9);transform:translateX(-50%)}
+/* an opened folder covers the home screen, as it does on the real thing */
+.phone-folder{position:absolute;inset:0;z-index:3;display:grid;place-content:center;justify-items:center;gap:calc(14 * var(--u));background:rgba(11,12,16,.55);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);animation:folder-in .45s var(--spring) both}
+.phone-folder-title{font:500 calc(22 * var(--u))/1 var(--f-body);color:#fff}
+.phone-folder-box{display:grid;grid-template-columns:repeat(3,calc(52 * var(--u)));align-content:start;gap:calc(16 * var(--u)) calc(18 * var(--u));min-height:calc(160 * var(--u));padding:calc(20 * var(--u));border-radius:calc(30 * var(--u));background:rgba(197,198,199,.2)}
+@keyframes folder-in{from{opacity:0;transform:scale(.72)}}
+
+/* ---------- contact ---------- */
+.contact{position:relative;overflow:clip;border-top:1px solid var(--line)}
+.contact::before{content:"";position:absolute;left:50%;bottom:-46%;width:min(1100px,130vw);aspect-ratio:1;border-radius:50%;background:radial-gradient(closest-side,rgba(69,162,158,.24),transparent);transform:translateX(-50%);pointer-events:none}
+.contact .wrap{position:relative}
+.mega{margin:22px 0 clamp(26px,4vw,44px);font:400 clamp(3.5rem,13.4vw,13rem)/.9 var(--f-display);text-transform:uppercase;color:var(--white)}
+.mega em{display:block;font-style:normal;color:var(--cyan)}
+.contact-grid{display:grid;gap:clamp(26px,4vw,48px);align-items:end}
+.contact-main{display:grid;gap:22px;min-width:0}
+.contact-row{display:flex;flex-wrap:wrap;gap:12px}
+.copy{display:inline-flex;align-items:center;gap:12px;max-width:100%;min-height:60px;padding:6px 6px 6px 20px;border:1px solid var(--line-2);border-radius:999px;background:rgba(31,40,51,.5)}
+.copy-ic{font-size:17px;color:var(--teal)}
+.copy-text{min-width:0;margin-right:auto;font:500 13.5px/1.3 var(--f-mono);color:var(--white);text-decoration:none;overflow-wrap:anywhere;-webkit-user-select:all;user-select:all;transition:color .25s}
+a.copy-text:hover{color:var(--cyan)}
+.copy-act{appearance:none;display:inline-flex;align-items:center;gap:8px;min-height:46px;padding:0 16px;flex:none;border:0;border-radius:999px;background:var(--slate);color:var(--white);font:600 13.5px/1 var(--f-body);text-decoration:none;cursor:pointer;transition:background-color .25s,color .25s}
+.copy-act:hover,.copy-act.is-done,.copy-act--main{background:var(--cyan);color:var(--ink)}
+.copy-act--main:hover{background:#A2FFF9}
+.socials{display:flex;flex-wrap:wrap;gap:8px}
+.foot-links{display:flex;flex-wrap:wrap;gap:6px 18px}
+@media (max-width:479px){
+  .copy{width:100%;padding-left:18px}
+  .copy-ic,.copy-wide{display:none}
+}
+.clock{display:grid;gap:8px;padding:20px 22px;border:1px solid var(--line);border-radius:var(--r-card);background:rgba(17,20,26,.7)}
+.clock-label{display:flex;align-items:center;gap:10px;font:500 12px/1 var(--f-mono);letter-spacing:.12em;text-transform:uppercase;color:var(--dim)}
+.clock-time{font:400 clamp(2.6rem,6vw,4rem)/1 var(--f-display);letter-spacing:.02em;color:var(--white);font-variant-numeric:tabular-nums}
+.clock-zone{font:400 12.5px/1.5 var(--f-mono)}
+@media (min-width:900px){.contact-grid{grid-template-columns:minmax(0,1fr) minmax(260px,320px)}}
+.foot{border-top:1px solid var(--line);padding-block:26px}
+.foot-in{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 28px;font:400 12px/1.6 var(--f-mono);color:var(--dim)}
+.foot a{color:var(--mist);text-decoration:none}
+.foot a:hover{color:var(--cyan)}
+
+/* ---------- app sheet (dialog) ---------- */
+.sheet{width:min(780px,calc(100vw - 32px));max-width:none;max-height:min(88dvh,860px);padding:0;border:1px solid var(--line-2);border-radius:28px;background:var(--ink-2);color:var(--mist);overflow:hidden;box-shadow:0 40px 120px -20px #000}
+.sheet::backdrop{background:rgba(5,6,8,.76);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+.sheet[open]{animation:sheet-in .62s var(--spring) both}
+.sheet[open]::backdrop{animation:fade-in .3s ease both}
+.sheet.is-closing{animation:sheet-out .2s ease-in both}
+.sheet.is-closing::backdrop{animation:fade-out .2s ease both}
+@keyframes sheet-in{from{opacity:0;transform:translate3d(0,44px,0) scale(.95)}}
+@keyframes sheet-out{to{opacity:0;transform:translate3d(0,24px,0) scale(.98)}}
+@keyframes fade-in{from{opacity:0}}
+@keyframes fade-out{to{opacity:0}}
+.sheet-in{max-height:inherit;overflow-y:auto;overscroll-behavior:contain}
+.sheet-in.is-swap > :not(.sheet-foot){animation:fade-up .45s var(--ease) both}
+.sheet-x{appearance:none;position:absolute;top:14px;right:14px;z-index:2;display:grid;place-items:center;width:42px;height:42px;border:1px solid var(--line-2);border-radius:50%;background:rgba(11,12,16,.6);color:var(--white);font-size:16px;cursor:pointer;transition:background-color .25s,color .25s}
+.sheet-x:hover{background:var(--cyan);color:var(--ink)}
+.sheet-hero{position:relative;isolation:isolate;overflow:hidden;display:grid;grid-template-columns:auto minmax(0,1fr);align-items:center;gap:18px 20px;padding:clamp(22px,4vw,36px);padding-right:clamp(64px,9vw,76px);border-bottom:1px solid var(--line)}
+.sheet-hero::after{content:"";position:absolute;inset:0;z-index:-2;background:radial-gradient(110% 150% at 100% 0%,rgba(69,162,158,.26),transparent 62%)}
+.sheet-aura{position:absolute;right:-12%;top:-70%;z-index:-1;width:72%;aspect-ratio:1;border-radius:50%;background-size:cover;filter:blur(60px) saturate(1.6);opacity:.24}
+.sheet-icon{width:clamp(72px,15vw,104px);height:auto;aspect-ratio:1;border-radius:23%;box-shadow:0 0 0 1px rgba(197,198,199,.2),0 22px 44px -18px #000}
+.sheet-name{margin-top:8px;font:400 clamp(2rem,6vw,3.4rem)/.96 var(--f-display);text-transform:uppercase;color:var(--white);overflow-wrap:anywhere}
+.sheet-actions{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.sheet-state{display:inline-flex;align-items:center;gap:9px;min-height:42px;padding:0 16px;border:1px solid var(--line-2);border-radius:999px;font:500 12px/1 var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--white)}
+.strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(132px,1fr));gap:1px;background:var(--line);border-bottom:1px solid var(--line)}
+.strip div{padding:16px clamp(16px,3vw,24px);background:var(--ink-2)}
+.strip dt{margin-bottom:8px;font:500 10.5px/1 var(--f-mono);letter-spacing:.12em;text-transform:uppercase;color:var(--dim)}
+.strip dd{font-size:.98rem;font-weight:600;color:var(--white)}
+.strip small{display:block;margin-top:3px;font:400 11px/1.4 var(--f-mono);color:var(--dim)}
+.sheet-body{display:grid;gap:18px;padding:clamp(20px,4vw,34px)}
+.sheet-body p{max-width:62ch;font-size:1.03rem;text-wrap:pretty}
+.points{display:grid;gap:10px}
+.points li{position:relative;padding-left:24px}
+.points li::before{content:"";position:absolute;left:0;top:.78em;width:12px;height:1px;background:var(--cyan)}
+.sheet-body .sheet-src{font:400 11px/1.5 var(--f-mono);color:var(--dim)}
+.sheet-foot{position:sticky;bottom:0;display:flex;justify-content:space-between;gap:10px;padding:12px clamp(14px,3vw,22px) calc(12px + env(safe-area-inset-bottom,0px));border-top:1px solid var(--line);background:var(--ink-2)}
+.sheet-nav{appearance:none;display:inline-flex;align-items:center;gap:8px;min-height:42px;padding:0 14px;border:1px solid transparent;border-radius:999px;background:none;color:var(--mist);font:500 13.5px/1 var(--f-body);cursor:pointer;transition:border-color .25s,color .25s}
+.sheet-nav:hover{border-color:var(--line-2);color:var(--white)}
+@media (max-width:719px){
+  .sheet{width:100%;max-height:92dvh;margin:auto 0 0;border-width:1px 0 0;border-radius:28px 28px 0 0}
+  .sheet[open]{animation-name:sheet-up}
+  .sheet.is-closing{animation-name:sheet-down}
+  .sheet-hero::before{content:"";position:absolute;left:50%;top:8px;width:40px;height:5px;border-radius:999px;background:var(--line-2);transform:translateX(-50%)}
+}
+@keyframes sheet-up{from{transform:translate3d(0,100%,0)}}
+@keyframes sheet-down{to{transform:translate3d(0,100%,0)}}
+
+/* ---------- toast and pointer ring ---------- */
+.toast{position:fixed;left:50%;bottom:calc(env(safe-area-inset-bottom,0px) + 24px);z-index:80;display:inline-flex;align-items:center;gap:10px;max-width:calc(100vw - 32px);padding:13px 20px;border-radius:999px;background:var(--cyan);color:var(--ink);font:600 14px/1.25 var(--f-body);box-shadow:0 20px 50px -12px rgba(102,252,241,.5);opacity:0;transform:translate3d(-50%,170%,0);transition:transform .6s var(--spring),opacity .25s;pointer-events:none}
+.toast.is-on{opacity:1;transform:translate3d(-50%,0,0)}
+.cursor{position:fixed;left:0;top:0;z-index:90;display:grid;place-items:center;width:84px;height:84px;margin:-42px 0 0 -42px;border:2.5px solid rgba(102,252,241,.8);border-radius:50%;opacity:0;pointer-events:none;transform:translate3d(-200px,-200px,0) scale(.4);transition:opacity .25s,background-color .25s,border-color .25s;will-change:transform}
+.cursor span{font:500 12px/1 var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--ink);opacity:0;transition:opacity .2s}
+.cursor.is-on{opacity:1}
+.cursor.is-link{background:rgba(102,252,241,.14)}
+.cursor.is-view{background:var(--cyan);border-color:var(--cyan)}
+.cursor.is-view span{opacity:1}
+.is-locked .cursor{opacity:0}
+@media not ((hover:hover) and (pointer:fine)){.cursor{display:none}}
+
+/* ---------- scroll reveals: only armed by script for things below the fold ---------- */
+.pre{opacity:0;transform:translate3d(0,30px,0)}
+.pre.in{opacity:1;transform:none;transition:opacity .7s var(--ease) var(--d,0s),transform .95s var(--ease) var(--d,0s)}
+
+@media (prefers-reduced-motion:reduce){
+  .phone-folder{animation:none}
+  .phone-app > img,.phone-folder-tile,.phone-widget-box{transition:none}
+  html{scroll-behavior:auto}
+  .boot,.boot-veil{display:none}
+  .mq{animation:none;flex-wrap:wrap;width:auto;row-gap:6px}
+  .ch,.portrait-in,.halo,.hero-copy,.plate,.hero-meta,.blob,.pulse::after,.sheet[open],.sheet.is-closing,.sheet[open]::backdrop,.sheet-in.is-swap > *{animation:none}
+  .btn .ic,.card-go,.toast,.phone-app img{transition:none}
+}
+</style>
+<!--/page:head-->
+</head>
+<body>
+<!--page:body-->
+
+<a class="skip" href="#work">Skip to the work</a>
+<i id="sentinel" aria-hidden="true"></i>
+
+<div class="boot" id="boot" aria-hidden="true">
+  <div class="boot-top"><span>Asad Hamza</span><span id="bootMsg">Compiling portfolio</span></div>
+  <div class="boot-num" id="bootNum">000</div>
+  <div class="boot-bar"><i></i></div>
+</div>
+<div class="boot-veil" id="bootVeil" aria-hidden="true"></div>
+
+<svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute">
+  <defs>
+    <!-- colour grade, part one: a touch less saturation, shadows pushed toward teal -->
+    <filter id="grade" color-interpolation-filters="sRGB">
+      <feColorMatrix type="saturate" values=".86"/>
+      <feComponentTransfer>
+        <feFuncR type="table" tableValues="0 .215 .47 .755 1"/>
+        <feFuncG type="table" tableValues=".015 .25 .505 .775 1"/>
+        <feFuncB type="table" tableValues=".04 .285 .535 .78 .985"/>
+      </feComponentTransfer>
+    </filter>
+    <symbol id="i-ne" viewBox="0 0 16 16"><path d="M4.5 11.5 11.5 4.5M5.5 4.5h6v6"/></symbol>
+    <symbol id="i-down" viewBox="0 0 16 16"><path d="M8 3v10M3.5 8.5 8 13l4.5-4.5"/></symbol>
+    <symbol id="i-left" viewBox="0 0 16 16"><path d="M13 8H3M7.5 3.5 3 8l4.5 4.5"/></symbol>
+    <symbol id="i-right" viewBox="0 0 16 16"><path d="M3 8h10M8.5 3.5 13 8l-4.5 4.5"/></symbol>
+    <symbol id="i-x" viewBox="0 0 16 16"><path d="m4 4 8 8M12 4l-8 8"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 16 16"><rect x="5.5" y="5.5" width="8" height="8" rx="2"/><path d="M10.5 5.5v-1a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h1"/></symbol>
+    <symbol id="i-check" viewBox="0 0 16 16"><path d="m3.5 8.5 3 3 6-7"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 16 16"><rect x="2" y="3.5" width="12" height="9" rx="2"/><path d="m2.6 5 5.4 4 5.4-4"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 16 16"><path d="M8 2.5a5.5 5.5 0 0 0-4.8 8.2l-.7 2.8 2.9-.7A5.5 5.5 0 1 0 8 2.5Z"/></symbol>
+  </defs>
+</svg>
+
+<header class="top" id="top">
+  <div class="wrap top-in">
+    <a class="brand" href="#hero" aria-label="Asad Hamza, back to the top">
+      <span class="brand-mark" aria-hidden="true">AH</span>
+      <span class="brand-name">Asad Hamza</span>
+    </a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#work">Work</a>
+      <a href="#releases">Releases</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn--sm" data-magnetic href="https://www.linkedin.com/in/asad-hamza-552492210/" target="_blank" rel="noopener">
+      <span class="btn-in">LinkedIn <svg class="ic" aria-hidden="true"><use href="#i-ne"/></svg></span>
+    </a>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero" aria-label="Introduction">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="blob blob--a"></div>
+      <div class="blob blob--b"></div>
+      <canvas id="field"></canvas>
+      <div class="spot" id="spot" hidden><canvas id="fieldHot"></canvas></div>
+    </div>
+    <div class="wrap">
+      <div class="hero-meta">
+        <p class="avail"><span class="pulse" aria-hidden="true"></span>Available for select projects <b>Q4 2026</b></p>
+        <p class="hero-role">iOS Developer<i>/</i>Swift<i>/</i>UIKit</p>
+      </div>
+      <div class="stage" id="stage">
+        <h1 class="name">
+          <span class="sr">Asad Hamza, iOS Developer</span>
+          <span class="name-line name-line--a" aria-hidden="true"><span class="ch" style="--i:0">A</span><span class="ch" style="--i:1">S</span><span class="ch" style="--i:2">A</span><span class="ch" style="--i:3">D</span></span>
+          <span class="name-line name-line--b" aria-hidden="true"><span class="ch" style="--i:4">H</span><span class="ch" style="--i:5">A</span><span class="ch" style="--i:6">M</span><span class="ch" style="--i:7">Z</span><span class="ch" style="--i:8">A</span></span>
+        </h1>
+        <figure class="portrait" id="portrait">
+          <span class="halo" aria-hidden="true"></span>
+          <div class="portrait-in">
+            <div class="portrait-cut">
+              <picture>
+                <source type="image/avif" srcset="assets/portrait.avif">
+                <img id="portraitImg" src="assets/portrait-fallback.jpg" width="928" height="1120" alt="Asad Hamza in a grey suit, white shirt and blue tie" fetchpriority="high" decoding="async">
+              </picture>
+              <span class="portrait-rim" aria-hidden="true"></span>
+            </div>
+          </div>
+        </figure>
+        <div class="hero-copy">
+          <p class="lead">I build native iOS apps and see them through to the App Store. <strong>Four years in, more than 30 are live</strong>, from luxury car rental to wholesale ordering in Urdu.</p>
+          <div class="cta">
+            <a class="btn" data-magnetic href="#work"><span class="btn-in">View selected work <svg class="ic ic--down" aria-hidden="true"><use href="#i-down"/></svg></span></a>
+            <a class="btn btn--ghost" data-magnetic href="#contact"><span class="btn-in">Get in touch</span></a>
+          </div>
+        </div>
+        <dl class="plate">
+          <div><dt>Role</dt><dd>iOS Developer</dd></div>
+          <div><dt>Experience</dt><dd>4+ years</dd></div>
+          <div><dt>App Store</dt><dd>30+ apps live</dd></div>
+          <div><dt>Based</dt><dd>Pakistan, UTC+5</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MARQUEE ============ -->
+  <div class="marquee" id="marquee" aria-hidden="true">
+    <div class="mq" id="mq1"></div>
+    <div class="mq mq--rev" id="mq2"></div>
+  </div>
+
+  <!-- ============ WORK ============ -->
+  <section class="sec" id="work" aria-labelledby="work-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="eyebrow">Selected work <span id="workCount"></span></p>
+        <h2 class="title" id="work-h">Apps people <em>actually install</em></h2>
+        <p class="sub" data-reveal>A cross-section of the 30+ apps I've shipped. Open any card for the details and, where the app is public, its App Store page.</p>
+      </header>
+      <div class="filters" id="filters" role="group" aria-label="Filter apps by industry"></div>
+      <p class="sr" id="filterLive" role="status" aria-live="polite"></p>
+      <ul class="grid" id="grid"></ul>
+      <noscript><p class="sub">Rent FYV, Masoom Traders, Insure Verify AI, RntlOS, Rent FYV Admin, Surgicrafts, Gainly, Phlex, Voyafly, Lillly, Shine n Go, YB Island, Lamborghini Austin, Liquor Store, Sense 2 Cents, Bloom, National Wildlife Federation, Bioceutica Milano, Euro Wood, Arab Coupons and Excel Wand.</p></noscript>
+    </div>
+  </section>
+
+  <!-- ============ RELEASE LOG ============ -->
+  <section class="sec about" id="releases" aria-labelledby="log-h">
+    <div class="wrap log-grid">
+      <header class="log-head">
+        <p class="eyebrow">Release log</p>
+        <h2 class="title" id="log-h">First build to <em>the store</em></h2>
+        <p class="sub" data-reveal>The first App Store release of each app, as the store lists it. Version numbers checked in November 2026.</p>
+      </header>
+      <ol class="log-list" id="logList"><li class="log-rail" aria-hidden="true"><i></i></li></ol>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="sec about" id="about" aria-labelledby="about-h">
+    <div class="wrap about-grid">
+      <div class="about-copy">
+        <p class="eyebrow">About</p>
+        <h2 class="title" id="about-h">Four years on <em>one platform</em></h2>
+        <p data-reveal>I'm Asad Hamza, an iOS developer with <strong>4+ years</strong> of building apps that real customers install. More than <strong>30 of them</strong> are on the App Store today.</p>
+        <p data-reveal>Most of my work is Swift and UIKit, with SwiftUI and Combine where they fit. I've wired up bookings and payments for car rental, identity checks for rental operators and a right-to-left Urdu storefront for wholesalers, along with the push, maps and analytics that sit underneath.</p>
+        <p data-reveal>I stay with an app after launch. Rent FYV is on version 1.5.9 and Surgicrafts on 2.3.</p>
+        <div class="stack" data-reveal>
+          <div class="stack-row"><h3>Language and UI</h3><ul><li class="pill">Swift</li><li class="pill">UIKit</li><li class="pill">SwiftUI</li><li class="pill">Storyboards and XIBs</li><li class="pill">Auto Layout</li><li class="pill">Combine</li><li class="pill">async/await</li></ul></div>
+          <div class="stack-row"><h3>Apple frameworks</h3><ul><li class="pill">MapKit</li><li class="pill">Core Location</li><li class="pill">AVFoundation</li><li class="pill">StoreKit</li><li class="pill">PassKit</li><li class="pill">PDFKit</li><li class="pill">Push notifications</li><li class="pill">Sign in with Apple</li></ul></div>
+          <div class="stack-row"><h3>Services</h3><ul><li class="pill">REST APIs</li><li class="pill">Firebase</li><li class="pill">Stripe</li><li class="pill">Google Maps and Places</li><li class="pill">Socket.IO</li><li class="pill">Mixpanel</li><li class="pill">Lottie</li></ul></div>
+          <div class="stack-row"><h3>Shipping</h3><ul><li class="pill">Xcode</li><li class="pill">Swift Package Manager</li><li class="pill">CocoaPods</li><li class="pill">Git and GitHub</li><li class="pill">TestFlight</li><li class="pill">App Store Connect</li></ul></div>
+        </div>
+      </div>
+      <div class="phone-wrap" data-reveal>
+        <div class="phone" id="phone">
+          <span class="phone-btn phone-btn--action" aria-hidden="true"></span>
+          <span class="phone-btn phone-btn--up" aria-hidden="true"></span>
+          <span class="phone-btn phone-btn--down" aria-hidden="true"></span>
+          <span class="phone-btn phone-btn--power" aria-hidden="true"></span>
+          <div class="phone-body">
+            <div class="phone-screen">
+              <div class="phone-status">
+                <time id="phoneTime">9:41</time>
+                <span class="phone-status-r" aria-hidden="true">
+                  <svg viewBox="0 0 18 12"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="5" y="5.4" width="3" height="6.6" rx="1"/><rect x="10" y="2.7" width="3" height="9.3" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/></svg>
+                  <svg viewBox="0 0 16 12"><path d="M1.2 4.4a9.6 9.6 0 0 1 13.6 0M3.7 7a6 6 0 0 1 8.6 0" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/><circle cx="8" cy="10.1" r="1.5"/></svg>
+                  <svg viewBox="0 0 27 12"><rect x=".5" y=".5" width="22" height="11" rx="3.4" fill="none" stroke="currentColor" opacity=".45"/><rect x="2" y="2" width="19" height="8" rx="2.1"/><rect x="24" y="4" width="2.2" height="4" rx="1" opacity=".5"/></svg>
+                </span>
+              </div>
+              <div class="phone-home" id="phoneHome">
+                <a class="phone-widget" href="#work" aria-label="More than 30 apps shipped in over 4 years. See the work.">
+                  <span class="phone-widget-box"><span class="phone-widget-k">Shipped</span><span class="phone-widget-n">30+</span><span class="phone-widget-t">apps in 4+ years</span></span>
+                  <span>Portfolio</span>
+                </a>
+              </div>
+              <div class="phone-search" aria-hidden="true"><svg viewBox="0 0 12 12"><circle cx="5" cy="5" r="3.6" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="m7.8 7.8 3 3" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>Search</div>
+              <div class="phone-dock" id="phoneDock"></div>
+              <div class="phone-folder" id="phoneFolder" hidden>
+                <span class="phone-folder-title">More</span>
+                <div class="phone-folder-box" id="phoneFolderBox"></div>
+              </div>
+              <span class="phone-bar" aria-hidden="true"></span>
+            </div>
+            <span class="phone-island" aria-hidden="true"></span>
+          </div>
+        </div>
+        <p class="phone-cap">One home screen, 21 apps. Every icon opens.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="sec contact" id="contact" aria-labelledby="contact-h">
+    <div class="wrap">
+      <p class="eyebrow">Contact</p>
+      <h2 class="mega" id="contact-h">Got an app <em>to ship?</em></h2>
+      <div class="contact-grid">
+        <div class="contact-main">
+          <p class="sub">Tell me what you're building. Email and WhatsApp are the fastest ways to reach me.</p>
+          <div class="contact-row">
+            <div class="copy">
+              <svg class="ic copy-ic" aria-hidden="true"><use href="#i-mail"/></svg>
+              <a class="copy-text" id="mailText" href="mailto:asadhamza810@gmail.com">asadhamza810@gmail.com</a>
+              <button class="copy-act copy-act--main" type="button" data-copy="asadhamza810@gmail.com" data-said="Email copied" data-select="mailText"><svg class="ic" aria-hidden="true"><use href="#i-copy"/></svg><span>Copy<span class="copy-wide"> email</span></span></button>
+            </div>
+            <div class="copy">
+              <svg class="ic copy-ic" aria-hidden="true"><use href="#i-chat"/></svg>
+              <span class="copy-text" id="waText">+92 302 4358987</span>
+              <a class="copy-act" href="https://wa.me/923024358987" target="_blank" rel="noopener"><span>WhatsApp</span><svg class="ic" aria-hidden="true"><use href="#i-ne"/></svg></a>
+            </div>
+          </div>
+          <ul class="socials" aria-label="Find me elsewhere">
+            <li><a class="btn btn--ghost btn--sm" data-magnetic href="https://www.linkedin.com/in/asad-hamza-552492210/" target="_blank" rel="noopener"><span class="btn-in">LinkedIn <svg class="ic" aria-hidden="true"><use href="#i-ne"/></svg></span></a></li>
+            <li><a class="btn btn--ghost btn--sm" data-magnetic href="https://www.instagram.com/ishq_a_majazi" target="_blank" rel="noopener"><span class="btn-in">Instagram <svg class="ic" aria-hidden="true"><use href="#i-ne"/></svg></span></a></li>
+            <li><a class="btn btn--ghost btn--sm" data-magnetic href="https://www.facebook.com/share/1E3MP7CXhk/?mibextid=wwXIfr" target="_blank" rel="noopener"><span class="btn-in">Facebook <svg class="ic" aria-hidden="true"><use href="#i-ne"/></svg></span></a></li>
+          </ul>
+        </div>
+        <div class="clock" aria-label="Asad's local time">
+          <span class="clock-label"><span class="pulse" aria-hidden="true"></span>My local time</span>
+          <time class="clock-time" id="clock">--:--:--</time>
+          <span class="clock-zone">PKT, UTC+5. <span id="daypart">Daytime</span> in Pakistan.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <span>© 2026 Asad Hamza. App names and icons belong to their owners.</span>
+    <span class="foot-links">
+      <a href="mailto:asadhamza810@gmail.com">Email</a>
+      <a href="https://wa.me/923024358987" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="https://www.linkedin.com/in/asad-hamza-552492210/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.instagram.com/ishq_a_majazi" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.facebook.com/share/1E3MP7CXhk/?mibextid=wwXIfr" target="_blank" rel="noopener">Facebook</a>
+      <a href="#hero">Back to top ↑</a>
+    </span>
+  </div>
+</footer>
+
+<!-- one sheet, refilled for whichever app is opened -->
+<dialog class="sheet" id="sheet" aria-labelledby="sheetName">
+  <button class="sheet-x" id="sheetX" type="button" aria-label="Close"><svg class="ic" aria-hidden="true"><use href="#i-x"/></svg></button>
+  <div class="sheet-in" id="sheetIn">
+    <div class="sheet-hero">
+      <span class="sheet-aura" id="sheetAura" aria-hidden="true"></span>
+      <img class="sheet-icon" id="sheetIcon" src="assets/icons/rent-fyv.jpg" width="104" height="104" alt="">
+      <div>
+        <p class="card-tag" id="sheetTag"></p>
+        <h2 class="sheet-name" id="sheetName"></h2>
+      </div>
+      <div class="sheet-actions">
+        <a class="btn btn--sm" id="sheetStore" href="#" target="_blank" rel="noopener"><span class="btn-in">View on the App Store <svg class="ic" aria-hidden="true"><use href="#i-ne"/></svg></span></a>
+        <span class="sheet-state" id="sheetState"></span>
+      </div>
+    </div>
+    <dl class="strip" id="sheetStrip"></dl>
+    <div class="sheet-body">
+      <p id="sheetAbout"></p>
+      <ul class="points" id="sheetPoints"></ul>
+      <div class="pills" id="sheetPills"></div>
+      <p class="sheet-src" id="sheetSrc">Release date, version and category from the App Store, November 2026.</p>
+    </div>
+    <div class="sheet-foot">
+      <button class="sheet-nav" id="sheetPrev" type="button"><svg class="ic" aria-hidden="true"><use href="#i-left"/></svg>Previous</button>
+      <button class="sheet-nav" id="sheetNext" type="button">Next<svg class="ic" aria-hidden="true"><use href="#i-right"/></svg></button>
+    </div>
+  </div>
+</dialog>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<div class="cursor" id="cursor" aria-hidden="true"><span>Open</span></div>
+
+<script>
+(() => {
+  'use strict';
+
+  /* ================= helpers ================= */
+  const d = document, root = d.documentElement;
+  const $ = (s, r = d) => r.querySelector(s);
+  const $$ = (s, r = d) => Array.from(r.querySelectorAll(s));
+  const clamp = (v, a, b) => Math.min(b, Math.max(a, v));
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const fine = matchMedia('(hover: hover) and (pointer: fine)').matches;
+
+  // Every listener, observer and timer is registered here so one call tears the page down.
+  const ac = new AbortController();
+  const on = (t, ev, fn, opt) => t.addEventListener(ev, fn, Object.assign({ signal: ac.signal }, opt));
+  const observers = [];
+  const intervals = [];
+  const timeouts = new Set();
+  const later = (fn, ms) => { const id = setTimeout(() => { timeouts.delete(id); fn(); }, ms); timeouts.add(id); return id; };
+
+  function h(tag, attrs, ...kids) {
+    const n = d.createElement(tag);
+    for (const k in attrs || {}) {
+      const v = attrs[k];
+      if (v == null || v === false) continue;
+      if (k === 'class') n.className = v;
+      else if (k === 'text') n.textContent = v;
+      else if (k === 'style') n.style.cssText = v;
+      else n.setAttribute(k, v === true ? '' : v);
+    }
+    for (const kid of kids.flat()) if (kid != null && kid !== false) n.append(kid);
+    return n;
+  }
+  function ic(id) {
+    const NS = 'http://www.w3.org/2000/svg';
+    const s = d.createElementNS(NS, 'svg'), u = d.createElementNS(NS, 'use');
+    s.setAttribute('class', 'ic'); s.setAttribute('aria-hidden', 'true');
+    u.setAttribute('href', '#' + id); s.append(u);
+    return s;
+  }
+
+  /* ================= content =================
+     To add an app: drop a 200px icon in assets/icons/<id>.jpg and add one object here. */
+  const GROUPS = [['all', 'All'], ['mobility', 'Mobility'], ['commerce', 'Commerce'], ['fintech', 'Fintech'], ['lifestyle', 'Lifestyle'], ['learning', 'Learning']];
+  const APPS = [
+    { id: 'rent-fyv', name: 'Rent FYV', short: 'Rent FYV', size: 'xl', group: 'mobility', tag: 'Mobility · Marketplace', year: '2023',
+      blurb: 'Luxury and exotic car rental with delivery to your door, live in the US, Dubai, the UK and Europe.',
+      about: 'Rent FYV is a marketplace for supercars, luxury SUVs and chauffeur-driven cars. Renters book in a few taps, see the full price before paying and have the car delivered to an airport, hotel or home.',
+      points: ['Search, booking and checkout with Stripe payments', 'Google Maps and Places for pickup and delivery addresses', 'Firebase push notifications that open the right screen'],
+      pills: ['UIKit', 'Stripe', 'Google Maps', 'Firebase'],
+      store: { url: 'https://apps.apple.com/us/app/fyv-car-rental-marketplace/id6447065929', version: '1.5.9', first: '2023-08', genre: 'Travel', rating: '4.7 ★', ratingNote: '67 ratings, US store' } },
+    { id: 'masoom-traders', name: 'Masoom Traders', short: 'Masoom', size: 'xl', group: 'commerce', tag: 'Commerce · Wholesale', year: '2026',
+      blurb: 'Wholesale ordering in Urdu. Shopkeepers browse brands, fill a cart against live stock and track every order.',
+      about: "Masoom Traders puts a wholesaler's whole catalogue on a shopkeeper's phone, entirely in Urdu. Buyers browse by brand and category, build a cart, check out and follow each order until it is delivered.",
+      points: ['Right-to-left Nastaliq interface, with custom label classes so tall Urdu letters never clip', 'Cart that respects stock limits and is saved per account', 'One-time-code sign in, order tracking, reorder lists and a notifications inbox'],
+      pills: ['UIKit', 'Urdu · RTL', 'Lottie', 'REST API'],
+      status: 'In testing · build 1.0' },
+    { id: 'insure-verify-ai', name: 'Insure Verify AI', short: 'Verify AI', size: 'xl', group: 'mobility', tag: 'Mobility · AI verification', year: '2025',
+      blurb: "Checks a renter's identity, driving licence and insurance in seconds, so rental operators can say yes faster.",
+      about: "Insure Verify AI lets car rental companies confirm who a renter is and whether their licence and insurance are valid. It scans government ID, matches it to the renter's face and returns a result in seconds.",
+      points: ['Camera capture for IDs, licences and insurance cards', 'Results in seconds, at the rental counter', 'UIKit with SwiftUI, Combine and async/await where they fit'],
+      pills: ['UIKit', 'SwiftUI', 'Combine'],
+      store: { url: 'https://apps.apple.com/us/app/insure-verify-ai/id6756063446', version: '1.0.2', first: '2025-12', genre: 'Travel' } },
+    { id: 'rntlos', name: 'RntlOS', short: 'RntlOS', size: 'xl', group: 'mobility', tag: 'Mobility · Operations', year: 'Next',
+      blurb: 'A back office for rental operators: bookings, quotes, agreements, payments and a calendar.',
+      about: 'RntlOS runs a car rental business from an iPhone. Operators create bookings and quotes, send agreements and payment requests, and manage customers and vehicles in one place.',
+      points: ['Bookings and quotes, with agreements and payment requests in the same flow', 'Customer and vehicle management, including vehicle uploads', 'Calendar view of the booking schedule'],
+      pills: ['UIKit', 'MapKit', 'Sign in with Apple'],
+      status: 'In development' },
+
+    { id: 'rent-fyv-admin', name: 'Rent FYV Admin', short: 'FYV Admin', size: 'md', group: 'mobility', tag: 'Mobility · Operations', year: '2023',
+      blurb: 'The operator side of Rent FYV. Manage the cars and content renters see in the main app.',
+      about: 'Rent FYV Admin gives the Rent FYV team control of the marketplace from an iPhone: the inventory and the content behind the renter app.',
+      points: ['Inventory and content management for the renter app', 'Google Maps and Places for locations', 'Firebase push notifications'],
+      pills: ['UIKit', 'Firebase', 'Google Maps'],
+      store: { url: 'https://apps.apple.com/us/app/rent-fyv-admin/id6444188447', version: '1.3.6', first: '2023-08', genre: 'Travel' } },
+    { id: 'surgicrafts', name: 'Surgicrafts', short: 'Surgicrafts', size: 'md', group: 'commerce', tag: 'Healthcare · B2B', year: '2022',
+      blurb: 'Catalogue and ordering app for a surgical instrument maker in business since 1961.',
+      about: "Surgicrafts has manufactured and exported surgical, medical and dental instruments since 1961. The app puts the catalogue in buyers' hands and takes their orders directly.",
+      points: ['Instrument catalogue with in-app ordering', 'PDF documents opened inside the app', 'Firebase push notifications'],
+      pills: ['UIKit', 'PDFKit', 'Firebase'],
+      store: { url: 'https://apps.apple.com/us/app/surgicrafts/id1629138655', version: '2.3', first: '2022-08', genre: 'Medical' } },
+    { id: 'gainly', name: 'Gainly', short: 'Gainly', size: 'md', group: 'fintech', tag: 'Fintech', year: '2025',
+      blurb: 'Profit and expense tracking across businesses, side projects and household budgets.',
+      about: 'Gainly records income and spending for several ventures in one place, then shows which one actually makes money. It covers personal budgets too, from groceries to a bathroom renovation.',
+      points: ['Separate books for each business or side project', 'Spending history and patterns over time', 'Profit against expense reports'],
+      pills: ['Multi-business', 'Reports'],
+      store: { url: 'https://apps.apple.com/us/app/gainly-profits-made-clear/id6751708190', version: '1.0.5', first: '2025-10', genre: 'Finance' } },
+    { id: 'phlex', name: 'Phlex', short: 'Phlex', size: 'md', group: 'lifestyle', tag: 'Lifestyle · Travel', year: '2025',
+      blurb: 'City guides built on recommendations from locals: where to eat, shop and explore.',
+      about: 'Phlex collects recommendations from local experts in cities around the world. Each place comes with insider notes, and the community adds its own feedback.',
+      points: ['Hand-picked places from locals', 'Community feedback on every spot', 'Updates when new places are added'],
+      pills: ['City guides', 'Community'],
+      store: { url: 'https://apps.apple.com/us/app/phlex-travel-recommendations/id6477522074', version: '1.9', first: '2025-01', genre: 'Travel' } },
+    { id: 'voyafly', name: 'Voyafly', short: 'Voyafly', size: 'md', group: 'lifestyle', tag: 'Travel · eSIM',
+      blurb: 'Travel eSIMs. Pick a plan and get online in a new country in seconds, with no physical SIM.',
+      pills: ['eSIM', 'Travel'] },
+    { id: 'lillly', name: 'Lillly', short: 'Lillly', size: 'md', group: 'lifestyle', tag: 'Dating',
+      blurb: 'Blind dating within a 5 km radius. No photos up front, so the conversation comes first.',
+      pills: ['Location-based', 'Social'] },
+    { id: 'shine-n-go', name: 'Shine n Go', short: 'Shine n Go', size: 'md', group: 'mobility', tag: 'On-demand · Car care',
+      blurb: 'A car wash that comes to you. Book a professional detail at your own door.',
+      pills: ['On-demand', 'Booking'] },
+    { id: 'yb-island', name: 'YB Island', short: 'YB Island', size: 'md', group: 'lifestyle', tag: 'Social · Members',
+      blurb: "A private members' club in an app. Find exclusive parties nearby and get access.",
+      pills: ['Members only', 'Events'] },
+    { id: 'lamborghini-austin', name: 'Lamborghini Austin', short: 'Lambo ATX', size: 'md', group: 'mobility', tag: 'Automotive',
+      blurb: 'Showroom app for pre-owned Lamborghinis in Austin, with full specs for every car.',
+      pills: ['Showroom', 'Inventory'] },
+
+    { id: 'liquor-store', name: 'Liquor Store', short: 'Liquor', size: 'sm', group: 'commerce', tag: 'On-demand · Delivery',
+      blurb: 'Drinks ordered in the app and delivered to your hotel room.' },
+    { id: 'sense-2-cents', name: 'Sense 2 Cents', short: 'Sense 2¢', size: 'sm', group: 'fintech', tag: 'Fintech · Kids',
+      blurb: 'Teaches children to track and manage their own money.' },
+    { id: 'bloom', name: 'Bloom', short: 'Bloom', size: 'sm', group: 'learning', tag: 'Kids · Education',
+      blurb: 'Learning and drawing books for young children.' },
+    { id: 'nwf', name: 'National Wildlife Federation', short: 'NWF', size: 'sm', group: 'learning', tag: 'Education',
+      blurb: 'A guide for discovering and learning about wild animals.' },
+    { id: 'bioceutica-milano', name: 'Bioceutica Milano', short: 'Bioceutica', size: 'sm', group: 'commerce', tag: 'Beauty · E-commerce',
+      blurb: 'Medicated skincare and cosmetics from Milan, sold in the app.' },
+    { id: 'euro-wood', name: 'Euro Wood', short: 'Euro Wood', size: 'sm', group: 'commerce', tag: 'E-commerce',
+      blurb: 'Online store for European wood products.' },
+    { id: 'arab-coupons', name: 'Arab Coupons', short: 'Coupons', size: 'sm', group: 'commerce', tag: 'Deals',
+      blurb: 'Free vouchers and discount codes for the Gulf and Saudi markets.' },
+    { id: 'excel-wand', name: 'Excel Wand', short: 'Excel Wand', size: 'sm', group: 'learning', tag: 'Productivity',
+      blurb: 'A pocket reference of Microsoft Excel shortcuts.' }
+  ];
+  const LOG = [
+    { date: '2022.08', ids: ['surgicrafts'], title: 'Surgicrafts reaches the App Store', note: 'A surgical instrument catalogue with ordering. Now on version 2.3.' },
+    { date: '2023.08', ids: ['rent-fyv', 'rent-fyv-admin'], title: 'Rent FYV and its Admin app go live a day apart', note: 'The renter marketplace on 28 August, the operator app on the 29th. Now on 1.5.9 and 1.3.6.' },
+    { date: '2025.01', ids: ['phlex'], title: 'Phlex opens its city guides', note: 'Travel recommendations from locals. Now on version 1.9.' },
+    { date: '2025.10', ids: ['gainly'], title: 'Gainly ships', note: 'Profit and expense tracking. Now on version 1.0.5.' },
+    { date: '2025.12', ids: ['insure-verify-ai'], title: 'Insure Verify AI launches', note: 'Licence and insurance checks for rental operators. Now on version 1.0.2.' },
+    { date: '2026.11', ids: ['masoom-traders'], title: 'Masoom Traders goes out for testing', note: 'The first build of the Urdu wholesale app is with testers.' },
+    { date: 'Next', ids: ['rntlos'], title: 'RntlOS', note: 'A back office for rental operators, in development.' }
+  ];
+  const STACK_WORDS = ['Swift', 'UIKit', 'SwiftUI', 'Combine', 'Firebase', 'Stripe', 'Google Maps', 'TestFlight', 'App Store Connect'];
+  const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+  const byId = Object.fromEntries(APPS.map(a => [a.id, a]));
+  const iconOf = id => `assets/icons/${id}.jpg`;
+  const groupName = g => (GROUPS.find(x => x[0] === g) || [])[1] || '';
+  const statusOf = a => a.store ? `App Store · v${a.store.version}` : (a.status || '');
+  const monthOf = s => { const [y, m] = s.split('-'); return `${MONTHS[m - 1]} ${y}`; };
+
+  /* ================= render ================= */
+  const grid = $('#grid');
+  APPS.forEach((a, i) => {
+    grid.append(h('li', { class: `card card--${a.size}`, 'data-group': a.group, 'data-reveal': true, style: `view-transition-name:c-${a.id};--d:${(i % 4) * 60}ms` },
+      h('button', { class: 'card-hit', type: 'button', 'data-open': a.id, 'data-cursor': 'Open', 'aria-haspopup': 'dialog' },
+        a.size !== 'sm' && h('span', { class: 'card-aura', 'aria-hidden': 'true', style: `background-image:url(${iconOf(a.id)})` }),
+        h('span', { class: 'card-row' },
+          h('img', { class: 'app-icon', src: iconOf(a.id), alt: '', width: 72, height: 72, loading: 'lazy', decoding: 'async' }),
+          h('span', { class: 'card-tag', text: a.tag }),
+          a.year && h('span', { class: 'card-year', text: a.year })),
+        h('span', { class: 'card-name', text: a.name }),
+        h('span', { class: 'card-blurb', text: a.blurb }),
+        a.size !== 'sm' && a.pills && h('span', { class: 'pills' }, a.pills.map(p => h('span', { class: 'pill', text: p }))),
+        h('span', { class: 'card-foot' },
+          statusOf(a) && h('span', { class: 'card-status', text: statusOf(a) }),
+          h('span', { class: 'card-go', 'aria-hidden': 'true' }, ic('i-ne'))))));
+  });
+  $('#workCount').textContent = `/ ${APPS.length} of 30+`;
+
+  const filters = $('#filters');
+  GROUPS.forEach(([key, label]) => {
+    const n = key === 'all' ? APPS.length : APPS.filter(a => a.group === key).length;
+    filters.append(h('button', { class: 'chip', type: 'button', 'data-filter': key, 'aria-pressed': String(key === 'all') }, label, h('small', { text: String(n).padStart(2, '0') })));
+  });
+
+  const fillMq = (el, words) => { for (let k = 0; k < 2; k++) words.forEach(w => el.append(h('span', { text: w }), h('i'))); };
+  fillMq($('#mq1'), APPS.map(a => a.name));
+  fillMq($('#mq2'), STACK_WORDS.concat(STACK_WORDS));
+
+  const logList = $('#logList');
+  LOG.forEach((e, i) => {
+    logList.append(h('li', { class: 'log-item is-on', 'data-reveal': true, style: `--d:${Math.min(i, 3) * 50}ms` },
+      h('span', { class: 'log-node', 'aria-hidden': 'true' }),
+      h('span', { class: 'log-date', text: e.date }),
+      h('div', { class: 'log-body' },
+        h('h3', { class: 'log-title' },
+          h('span', { class: 'log-icons', 'aria-hidden': 'true' }, e.ids.map(id => h('img', { src: iconOf(id), alt: '', width: 34, height: 34, loading: 'lazy', decoding: 'async' }))),
+          h('span', { text: e.title })),
+        h('p', { class: 'log-note', text: e.note }))));
+  });
+
+  const phoneBtn = a => h('button', { class: 'phone-app', type: 'button', 'data-open': a.id, 'data-cursor': 'Open', 'aria-label': `${a.name}, open details` },
+    h('img', { src: iconOf(a.id), alt: '', width: 54, height: 54, loading: 'lazy', decoding: 'async' }), h('span', { text: a.short }));
+  // Home screen: a 2x2 widget, 15 icons and one folder fill five rows of four; the four lead apps sit in the dock.
+  const dockIds = APPS.filter(a => a.size === 'xl').map(a => a.id);
+  const FOLDER = ['arab-coupons', 'excel-wand'];
+  const phoneHome = $('#phoneHome'), phoneFolder = $('#phoneFolder');
+  APPS.filter(a => !dockIds.includes(a.id) && !FOLDER.includes(a.id)).forEach(a => phoneHome.append(phoneBtn(a)));
+  const folderBtn = h('button', { class: 'phone-app', type: 'button', 'data-cursor': 'Open', 'aria-expanded': 'false', 'aria-controls': 'phoneFolder', 'aria-label': 'More apps, open folder' },
+    h('span', { class: 'phone-folder-tile', 'aria-hidden': 'true' }, FOLDER.map(id => h('img', { src: iconOf(id), alt: '', width: 14, height: 14, loading: 'lazy', decoding: 'async' }))),
+    h('span', { text: 'More' }));
+  phoneHome.append(folderBtn);
+  FOLDER.forEach(id => $('#phoneFolderBox').append(phoneBtn(byId[id])));
+  dockIds.forEach(id => $('#phoneDock').append(phoneBtn(byId[id])));
+  const setFolder = open => { phoneFolder.hidden = !open; folderBtn.setAttribute('aria-expanded', String(open)); };
+
+  /* ================= preloader ================= */
+  const boot = $('#boot'), veil = $('#bootVeil');
+  if (reduce) { boot.remove(); veil.remove(); }
+  else {
+    const num = $('#bootNum'), msg = $('#bootMsg'), t0 = performance.now();
+    const count = now => {
+      const p = clamp((now - t0) / 640, 0, 1);
+      num.textContent = String(Math.round((1 - Math.pow(1 - p, 3)) * 100)).padStart(3, '0');
+      if (p < 1) requestAnimationFrame(count); else msg.textContent = 'Build succeeded';
+    };
+    requestAnimationFrame(count);
+    on(veil, 'animationend', () => { boot.remove(); veil.remove(); }, { once: true });
+  }
+
+  /* ================= one frame loop, driven by springs =================
+     Anything that moves registers a task; the loop stops as soon as every spring has settled. */
+  const tasks = new Set();
+  let rafId = 0, prevT = 0;
+  function frame(now) {
+    const dt = Math.min(0.034, (now - prevT) / 1000) || 0.016;
+    prevT = now;
+    for (const fn of tasks) if (!fn(dt)) tasks.delete(fn);
+    rafId = tasks.size ? requestAnimationFrame(frame) : 0;
+  }
+  function run(fn) {
+    tasks.add(fn);
+    if (!rafId) { prevT = performance.now(); rafId = requestAnimationFrame(frame); }
+  }
+  const spring = (k, c, x = 0) => ({ x, v: 0, t: x, k, c });
+  function step(s, dt, eps = 0.02) {
+    s.v += (-s.k * (s.x - s.t) - s.c * s.v) * dt;
+    s.x += s.v * dt;
+    if (Math.abs(s.v) < eps * 4 && Math.abs(s.x - s.t) < eps) { s.x = s.t; s.v = 0; return false; }
+    return true;
+  }
+
+  /* ================= pointer ring ================= */
+  if (fine && !reduce) {
+    const cur = $('#cursor'), lab = cur.firstElementChild;
+    const cx = spring(520, 40), cy = spring(520, 40), cs = spring(300, 24, 0.4);
+    let seen = false, rest = 0.4;
+    const draw = dt => {
+      const a = step(cx, dt, 0.05), b = step(cy, dt, 0.05), c = step(cs, dt, 0.002);
+      cur.style.transform = `translate3d(${cx.x.toFixed(1)}px,${cy.x.toFixed(1)}px,0) scale(${cs.x.toFixed(3)})`;
+      return a || b || c;
+    };
+    on(d, 'pointermove', e => {
+      if (e.pointerType !== 'mouse') return;
+      cx.t = e.clientX; cy.t = e.clientY;
+      if (!seen) { seen = true; cx.x = cx.t; cy.x = cy.t; cur.classList.add('is-on'); }
+      run(draw);
+    }, { passive: true });
+    on(d, 'pointerover', e => {
+      const t = e.target instanceof Element ? e.target : null;
+      const view = t && t.closest('[data-cursor]');
+      const link = !view && t && t.closest('a,button');
+      cur.classList.toggle('is-view', !!view);
+      cur.classList.toggle('is-link', !!link);
+      if (view) lab.textContent = view.dataset.cursor;
+      rest = cs.t = view ? 1 : link ? 0.62 : 0.4;
+      run(draw);
+    });
+    on(root, 'mouseleave', () => { seen = false; cur.classList.remove('is-on'); });
+    on(d, 'pointerdown', () => { cs.t = rest * 0.84; run(draw); });
+    on(d, 'pointerup', () => { cs.t = rest; run(draw); });
+  }
+
+  /* ================= magnetic buttons ================= */
+  if (fine && !reduce) {
+    $$('[data-magnetic]').forEach(el => {
+      const inner = $('.btn-in', el), sx = spring(200, 12), sy = spring(200, 12);
+      const pull = dt => {
+        const a = step(sx, dt, 0.03), b = step(sy, dt, 0.03);
+        const idle = !a && !b && sx.t === 0 && sy.t === 0;
+        el.style.transform = idle ? '' : `translate3d(${sx.x.toFixed(2)}px,${sy.x.toFixed(2)}px,0)`;
+        if (inner) inner.style.transform = idle ? '' : `translate3d(${(sx.x * 0.35).toFixed(2)}px,${(sy.x * 0.35).toFixed(2)}px,0)`;
+        return a || b;
+      };
+      on(el, 'pointermove', e => {
+        const r = el.getBoundingClientRect();
+        sx.t = (e.clientX - (r.left + r.width / 2 - sx.x)) * 0.3;
+        sy.t = (e.clientY - (r.top + r.height / 2 - sy.x)) * 0.4;
+        run(pull);
+      }, { passive: true });
+      on(el, 'pointerleave', () => { sx.t = sy.t = 0; run(pull); });
+    });
+  }
+
+  /* ================= hero ================= */
+  const hero = $('#hero'), stage = $('#stage'), portrait = $('#portrait');
+  const lineA = $('.name-line--a'), lineB = $('.name-line--b');
+  const field = $('#field'), spot = $('#spot'), hot = $('#fieldHot');
+  const pImg = $('#portraitImg');
+  const markAvif = () => { if (/\.avif($|\?)/.test(pImg.currentSrc || '')) root.classList.add('avif'); };
+  if (pImg.complete) markAvif(); else on(pImg, 'load', markAvif, { once: true });
+
+  // Background: fine strands following a flow field, like the barbs of a feather. Drawn once.
+  function drawField() {
+    const w = hero.offsetWidth, hh = hero.offsetHeight;
+    if (!w || !hh) return;
+    const dpr = Math.min(window.devicePixelRatio || 1, 1.5, 2600 / w);
+    const rnd = seed => () => { seed = seed + 0x6D2B79F5 | 0; let t = Math.imul(seed ^ seed >>> 15, 1 | seed); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; };
+    const angle = (x, y) => -0.62 + 0.95 * Math.sin(x * 0.0017 + y * 0.0011) + 0.6 * Math.cos(y * 0.0029 - x * 0.0008);
+    const paint = (cv, rgb, a0, a1, lw) => {
+      cv.width = Math.round(w * dpr); cv.height = Math.round(hh * dpr);
+      const g = cv.getContext('2d');
+      g.setTransform(dpr, 0, 0, dpr, 0, 0);
+      g.lineWidth = lw; g.lineCap = 'round';
+      const r = rnd(11), n = Math.round(w * hh / 1250);
+      for (let i = 0; i < n; i++) {
+        let x = r() * w, y = r() * hh;
+        const steps = 10 + (r() * 26 | 0);
+        g.beginPath(); g.moveTo(x, y);
+        for (let s = 0; s < steps; s++) { const a = angle(x, y); x += Math.cos(a) * 7; y += Math.sin(a) * 7; g.lineTo(x, y); }
+        g.strokeStyle = `rgba(${rgb},${(a0 + r() * (a1 - a0)).toFixed(3)})`;
+        g.stroke();
+      }
+    };
+    paint(field, '69,162,158', 0.04, 0.15, 1);
+    if (fine && !reduce) {
+      hot.style.width = w + 'px'; hot.style.height = hh + 'px';
+      paint(hot, '102,252,241', 0.16, 0.5, 1.15);
+    }
+  }
+
+  const letters = $$('.ch', stage).map(el => ({ el, line: el.parentNode, b: el.parentNode === lineB, cx: 0, cy: 0, h: 1, s: spring(210, 15, 1), f: spring(120, 22) }));
+  let stageW = 1, stageH = 1, heroH = 1, shiftA = 0, shiftB = 0, lift = 0, heroSeen = true;
+  const ptr = { x: 0, y: 0, live: false, real: false };
+  const SPOT = 260;
+  const sx = spring(90, 16), sy = spring(90, 16), px = spring(70, 14), py = spring(70, 14);
+
+  function measureHero() {
+    stageW = stage.offsetWidth; stageH = stage.offsetHeight; heroH = hero.offsetHeight;
+    letters.forEach(L => {
+      L.cx = L.line.offsetLeft + L.el.offsetLeft + L.el.offsetWidth / 2;
+      L.cy = L.line.offsetTop + L.line.offsetHeight / 2;
+      L.h = L.line.offsetHeight;
+    });
+    if (!ptr.real) { sx.x = sx.t = hero.offsetWidth * 0.74; sy.x = sy.t = heroH * 0.3; placeSpot(); }
+  }
+  function placeSpot() {
+    const x = sx.x - SPOT, y = sy.x - SPOT;
+    spot.style.transform = `translate3d(${x.toFixed(1)}px,${y.toFixed(1)}px,0)`;
+    hot.style.transform = `translate3d(${(-x).toFixed(1)}px,${(-y).toFixed(1)}px,0)`;
+  }
+  function placePortrait() {
+    portrait.style.transform = `translate3d(${px.x.toFixed(2)}px,${(py.x + lift).toFixed(2)}px,0)`;
+  }
+  // Letters stretch toward the pointer; the outlined surname also fills in under it.
+  function heroTask(dt) {
+    let alive = false;
+    for (const L of letters) {
+      let inf = 0;
+      if (ptr.live && Math.abs(ptr.y - L.cy) < L.h * 0.8) {
+        inf = Math.max(0, 1 - Math.abs(ptr.x - (L.cx + (L.b ? shiftB : shiftA))) / (L.h * 1.15));
+        inf *= inf;
+      }
+      L.s.t = 1 + inf * 0.12; L.f.t = inf;
+      const a = step(L.s, dt, 0.0008), b = L.b ? step(L.f, dt, 0.004) : false;
+      L.el.style.transform = L.s.x === 1 ? '' : `scaleY(${L.s.x.toFixed(4)})`;
+      if (L.b) L.el.style.setProperty('--f', clamp(L.f.x, 0, 1).toFixed(3));
+      alive = alive || a || b;
+    }
+    const c = step(sx, dt, 0.1), e = step(sy, dt, 0.1), g = step(px, dt, 0.02), i = step(py, dt, 0.02);
+    placeSpot(); placePortrait();
+    return alive || c || e || g || i;
+  }
+  // With no pointer around, a ghost pointer crosses each line every few seconds.
+  let ghostTimer = 0;
+  function sweep(onB) {
+    if (ptr.real || d.hidden || !heroSeen) return planSweep();
+    const ln = onB ? lineB : lineA, pad = ln.offsetHeight * 0.7;
+    const x0 = ln.offsetLeft - pad, x1 = ln.offsetLeft + ln.offsetWidth + pad, y = ln.offsetTop + ln.offsetHeight / 2;
+    let t = 0;
+    run(dt => {
+      if (ptr.real) return false;
+      t += dt / 1.3;
+      if (t >= 1) { ptr.live = false; run(heroTask); if (onB) planSweep(); else sweep(true); return false; }
+      const e = t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+      ptr.x = x0 + (x1 - x0) * e + (onB ? shiftB : shiftA); ptr.y = y; ptr.live = true;
+      run(heroTask);
+      return true;
+    });
+  }
+  function planSweep() { clearTimeout(ghostTimer); timeouts.delete(ghostTimer); ghostTimer = later(() => sweep(false), 6500); }
+
+  if (!reduce) {
+    if (fine) {
+      spot.hidden = false;
+      on(hero, 'pointermove', e => {
+        if (e.pointerType !== 'mouse') return;
+        const r = stage.getBoundingClientRect(), hr = hero.getBoundingClientRect();
+        ptr.x = e.clientX - r.left; ptr.y = e.clientY - r.top; ptr.live = ptr.real = true;
+        sx.t = e.clientX - hr.left; sy.t = e.clientY - hr.top;
+        px.t = (ptr.x / stageW - 0.5) * -16; py.t = (ptr.y / stageH - 0.5) * -10;
+        run(heroTask);
+      }, { passive: true });
+      on(hero, 'pointerleave', () => {
+        ptr.live = ptr.real = false; px.t = py.t = 0;
+        sx.t = hero.offsetWidth * 0.74; sy.t = heroH * 0.3;
+        run(heroTask); planSweep();
+      });
+    }
+    ghostTimer = later(() => sweep(false), 2600);
+  }
+  const heroIo = new IntersectionObserver(es => { heroSeen = es[0].isIntersecting; });
+  heroIo.observe(hero); observers.push(heroIo);
+
+  let resizeTimer = 0;
+  const ro = new ResizeObserver(() => {
+    clearTimeout(resizeTimer); timeouts.delete(resizeTimer);
+    resizeTimer = later(() => { measureHero(); drawField(); measureLog(); setSpan(); }, 160);
+  });
+  ro.observe(hero); observers.push(ro);
+
+  /* ================= scroll: one listener, one frame ================= */
+  const topBar = $('#top'), mqEls = [$('#mq1'), $('#mq2')];
+  let ticking = false, lastY = window.scrollY, lastT = performance.now();
+  let mqAnims = [], mqRate = 1, mqTarget = 1, mqDir = 1, mqIdle = 1, mqSeen = false;
+  const mqTask = dt => {
+    mqIdle += dt;
+    if (mqIdle > 0.12) mqTarget = mqDir;
+    mqRate += (mqTarget - mqRate) * Math.min(1, dt * 5);
+    const done = mqIdle > 0.12 && Math.abs(mqRate - mqTarget) < 0.01;
+    if (done) mqRate = mqTarget;
+    mqAnims.forEach(a => a.updatePlaybackRate(mqRate));
+    return !done;
+  };
+  let logSeen = false, logMarks = [];
+  function measureLog() { logMarks = $$('.log-item', logList).map(li => ({ li, y: li.offsetTop + 30 })); logScroll(); }
+  function logScroll() {
+    if (!logSeen || reduce) return;
+    const r = logList.getBoundingClientRect(), p = clamp((innerHeight * 0.62 - r.top - 30) / (r.height - 60), 0, 1);
+    logList.style.setProperty('--p', p.toFixed(4));
+    const y = 30 + p * (r.height - 60);
+    for (const m of logMarks) m.li.classList.toggle('is-on', m.y <= y + 1);
+  }
+  function onScroll(now) {
+    ticking = false;
+    const y = window.scrollY, dt = Math.max(1, now - lastT), vel = (y - lastY) / dt;
+    lastY = y; lastT = now;
+    if (!reduce && heroSeen) {                      // the two name lines slide apart as the hero leaves
+      const p = clamp(y / heroH, 0, 1);
+      shiftA = -p * stageW * 0.1; shiftB = p * stageW * 0.1; lift = -p * 34;
+      lineA.style.transform = `translate3d(${shiftA.toFixed(1)}px,0,0)`;
+      lineB.style.transform = `translate3d(${shiftB.toFixed(1)}px,0,0)`;
+      placePortrait();
+    }
+    if (!reduce && mqSeen && mqAnims.length && Math.abs(vel) > 0.02) {   // the marquee speeds up, and reverses, with the scroll
+      mqDir = vel < 0 ? -1 : 1;
+      mqTarget = mqDir * Math.min(7, 1 + Math.abs(vel) * 2.4);
+      mqIdle = 0; run(mqTask);
+    }
+    logScroll();
+  }
+  on(window, 'scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(onScroll); } }, { passive: true });
+
+  const stuckIo = new IntersectionObserver(es => topBar.classList.toggle('is-stuck', !es[0].isIntersecting));
+  stuckIo.observe($('#sentinel')); observers.push(stuckIo);
+  const mqIo = new IntersectionObserver(es => {
+    mqSeen = es[0].isIntersecting;
+    if (!mqAnims.length) mqAnims = mqEls.map(el => el.getAnimations ? el.getAnimations()[0] : null).filter(Boolean);
+    mqAnims.forEach(a => mqSeen ? a.play() : a.pause());
+  });
+  mqIo.observe($('#marquee')); observers.push(mqIo);
+  const logIo = new IntersectionObserver(es => { logSeen = es[0].isIntersecting; logScroll(); });
+  logIo.observe(logList); observers.push(logIo);
+  if (!reduce) logList.classList.add('is-live');
+
+  const navLinks = $$('.nav a');
+  const spy = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting) navLinks.forEach(l => l.setAttribute('aria-current', String(l.getAttribute('href') === '#' + e.target.id)));
+  }), { rootMargin: '-45% 0px -50% 0px' });
+  ['hero', 'work', 'releases', 'about', 'contact'].forEach(id => spy.observe($('#' + id)));
+  observers.push(spy);
+
+  /* ================= scroll reveals ================= */
+  if (!reduce) {
+    const fold = innerHeight * 0.94;
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+    }), { rootMargin: '0px 0px -7% 0px', threshold: 0.01 });
+    $$('[data-reveal]').forEach(el => { if (el.getBoundingClientRect().top > fold) { el.classList.add('pre'); io.observe(el); } });
+    observers.push(io);
+  }
+
+  /* ================= work: filter, glow and tilt ================= */
+  const chips = $$('.chip', filters), live = $('#filterLive');
+  const mq12 = matchMedia('(min-width:1200px)'), mq6 = matchMedia('(min-width:900px)');
+  const state = { filter: 'all', count: APPS.length };
+  // Pick a column span that fills every row for however many cards are showing.
+  function setSpan() {
+    const n = state.count, cols = mq12.matches ? 12 : mq6.matches ? 6 : 2;
+    const span = cols === 12 ? (n % 3 === 0 ? 4 : n % 2 === 0 ? 6 : 4) : cols === 6 ? (n % 2 === 0 ? 3 : n % 3 === 0 ? 2 : 3) : 2;
+    grid.style.setProperty('--span', span);
+  }
+  function applyFilter(g) {
+    state.filter = g; state.count = 0;
+    $$('.card', grid).forEach(c => {
+      const show = g === 'all' || c.dataset.group === g;
+      c.hidden = !show;
+      if (show) { state.count++; c.classList.remove('pre'); }
+    });
+    grid.classList.toggle('is-filtered', g !== 'all');
+    setSpan();
+    chips.forEach(b => b.setAttribute('aria-pressed', String(b.dataset.filter === g)));
+    live.textContent = `${state.count} ${state.count === 1 ? 'app' : 'apps'} shown`;
+    requestAnimationFrame(measureLog);
+  }
+  on(filters, 'click', e => {
+    const b = e.target.closest('.chip');
+    if (!b || b.dataset.filter === state.filter) return;
+    if (!reduce && d.startViewTransition) d.startViewTransition(() => applyFilter(b.dataset.filter));
+    else applyFilter(b.dataset.filter);
+  });
+
+  if (fine) {
+    let active = null;
+    const rx = spring(260, 22), ry = spring(260, 22);
+    const tilt = dt => {
+      const a = step(rx, dt, 0.01), b = step(ry, dt, 0.01);
+      if (!active) return false;
+      if (!a && !b && rx.t === 0 && ry.t === 0) { active.style.transform = ''; active = null; return false; }
+      active.style.transform = `perspective(900px) rotateX(${rx.x.toFixed(2)}deg) rotateY(${ry.x.toFixed(2)}deg)`;
+      return true;
+    };
+    on(grid, 'pointermove', e => {
+      const c = e.target.closest('.card-hit');
+      if (!c || e.pointerType !== 'mouse') return;
+      const r = c.getBoundingClientRect(), u = (e.clientX - r.left) / r.width, v = (e.clientY - r.top) / r.height;
+      c.style.setProperty('--gx', (u * 100).toFixed(1) + '%');
+      c.style.setProperty('--gy', (v * 100).toFixed(1) + '%');
+      if (reduce) return;
+      if (active && active !== c) { active.style.transform = ''; rx.x = ry.x = rx.v = ry.v = 0; }
+      active = c; ry.t = (u - 0.5) * 5; rx.t = (0.5 - v) * 5;
+      run(tilt);
+    }, { passive: true });
+    on(grid, 'pointerout', e => {
+      const c = e.target.closest('.card-hit');
+      if (c && !c.contains(e.relatedTarget)) { rx.t = ry.t = 0; run(tilt); }
+    });
+  }
+
+  /* ================= app sheet ================= */
+  const sheet = $('#sheet'), sheetIn = $('#sheetIn');
+  let current = null;
+  function fillSheet(a) {
+    current = a.id;
+    $('#sheetIcon').src = iconOf(a.id);
+    $('#sheetIcon').alt = `${a.name} app icon`;
+    $('#sheetAura').style.backgroundImage = `url(${iconOf(a.id)})`;
+    $('#sheetTag').textContent = a.tag;
+    $('#sheetName').textContent = a.name;
+    $('#sheetAbout').textContent = a.about || a.blurb;
+    const cells = a.store
+      ? [['First release', monthOf(a.store.first)], ['Version', a.store.version], ['Category', a.store.genre]].concat(a.store.rating ? [['Rating', a.store.rating, a.store.ratingNote]] : [])
+      : [['Industry', groupName(a.group)], ['Platform', 'iOS'], ['Status', a.status ? a.status.split(' · ')[0] : 'Shipped']];
+    $('#sheetStrip').replaceChildren(...cells.map(([k, v, note]) => h('div', null, h('dt', { text: k }), h('dd', null, v, note && h('small', { text: note })))));
+    const pts = $('#sheetPoints'); pts.replaceChildren(...(a.points || []).map(p => h('li', { text: p }))); pts.hidden = !(a.points && a.points.length);
+    const pills = $('#sheetPills'); pills.replaceChildren(...(a.pills || []).map(p => h('span', { class: 'pill', text: p }))); pills.hidden = !(a.pills && a.pills.length);
+    const store = $('#sheetStore'), st = $('#sheetState');
+    store.hidden = !a.store; if (a.store) store.href = a.store.url;
+    st.hidden = !!a.store; st.textContent = a.status || 'Shipped';
+    $('#sheetSrc').hidden = !a.store;
+  }
+  function openSheet(id) {
+    const a = byId[id];
+    if (!a) return;
+    fillSheet(a);
+    if (!sheet.open) { sheet.showModal(); root.classList.add('is-locked'); }
+    sheetIn.scrollTop = 0;
+  }
+  function closeSheet() {
+    if (!sheet.open || sheet.classList.contains('is-closing')) return;
+    const done = () => { sheet.classList.remove('is-closing'); if (sheet.open) sheet.close(); };
+    if (reduce) return done();
+    sheet.classList.add('is-closing');
+    later(done, 210);
+  }
+  function stepSheet(dir) {
+    const list = APPS.filter(a => state.filter === 'all' || a.group === state.filter);
+    const pool = list.some(a => a.id === current) ? list : APPS;
+    const i = pool.findIndex(a => a.id === current);
+    sheetIn.classList.remove('is-swap');
+    fillSheet(pool[(i + dir + pool.length) % pool.length]);
+    void sheetIn.offsetWidth;                       // restart the swap animation
+    sheetIn.classList.add('is-swap');
+    sheetIn.scrollTop = 0;
+  }
+  on(d, 'click', e => { const t = e.target.closest('[data-open]'); if (t) openSheet(t.dataset.open); });
+  on(folderBtn, 'click', () => setFolder(true));
+  on(phoneFolder, 'click', () => setFolder(false));          // a tap anywhere closes the folder; a tap on an icon also opens its sheet
+  on(d, 'keydown', e => { if (e.key === 'Escape' && !phoneFolder.hidden && !sheet.open) setFolder(false); });
+  on(sheet, 'close', () => root.classList.remove('is-locked'));
+  on(sheet, 'cancel', e => { e.preventDefault(); closeSheet(); });
+  on(sheet, 'click', e => { if (e.target === sheet) closeSheet(); });
+  on(sheet, 'keydown', e => { if (e.key === 'ArrowRight') stepSheet(1); else if (e.key === 'ArrowLeft') stepSheet(-1); });
+  on($('#sheetX'), 'click', closeSheet);
+  on($('#sheetPrev'), 'click', () => stepSheet(-1));
+  on($('#sheetNext'), 'click', () => stepSheet(1));
+
+  /* ================= copy link, toast, local time ================= */
+  const toast = $('#toast');
+  let toastTimer = 0;
+  function say(text) {
+    toast.textContent = text; toast.classList.add('is-on');
+    clearTimeout(toastTimer); timeouts.delete(toastTimer);
+    toastTimer = later(() => toast.classList.remove('is-on'), 2600);
+  }
+  $$('[data-copy]').forEach(btn => {
+    const lbl = $('span', btn), use = $('use', btn), keep = Array.from(lbl.childNodes);
+    let back = 0;
+    on(btn, 'click', async () => {
+      try {
+        await navigator.clipboard.writeText(btn.dataset.copy);
+        say(btn.dataset.said || 'Copied');
+        btn.classList.add('is-done'); lbl.textContent = 'Copied'; use.setAttribute('href', '#i-check');
+        clearTimeout(back); timeouts.delete(back);
+        back = later(() => { btn.classList.remove('is-done'); lbl.replaceChildren(...keep); use.setAttribute('href', '#i-copy'); }, 2200);
+      } catch (err) {                                // clipboard refused: select the text so a manual copy is one keystroke
+        const r = d.createRange(); r.selectNodeContents($('#' + btn.dataset.select));
+        const s = getSelection(); s.removeAllRanges(); s.addRange(r);
+        say('Selected. Press Ctrl+C or ⌘C to copy.');
+      }
+    });
+  });
+
+  const clock = $('#clock'), daypart = $('#daypart'), phoneTime = $('#phoneTime');
+  const fmt = new Intl.DateTimeFormat('en-GB', { timeZone: 'Asia/Karachi', hour: '2-digit', minute: '2-digit', second: '2-digit', hourCycle: 'h23' });
+  function tick() {
+    if (d.hidden) return;
+    const t = fmt.format(new Date()), hr = +t.slice(0, 2);
+    clock.textContent = t;
+    phoneTime.textContent = t.slice(0, 5).replace(/^0/, '');
+    daypart.textContent = hr < 5 ? 'Night' : hr < 12 ? 'Morning' : hr < 17 ? 'Afternoon' : hr < 21 ? 'Evening' : 'Night';
+  }
+  tick(); intervals.push(setInterval(tick, 1000));
+  on(d, 'visibilitychange', tick);
+
+  /* ================= start, and tidy up on the way out ================= */
+  measureHero(); setSpan(); measureLog();         // the ResizeObserver's first callback draws the field
+  if (d.fonts && d.fonts.ready) d.fonts.ready.then(() => { measureHero(); measureLog(); });
+
+  on(window, 'pagehide', e => {
+    if (e.persisted) return;
+    cancelAnimationFrame(rafId); tasks.clear();
+    observers.forEach(o => o.disconnect());
+    intervals.forEach(clearInterval);
+    timeouts.forEach(clearTimeout);
+    ac.abort();
+  });
+})();
+</script>
+<!--/page:body-->
+</body>
+</html>
